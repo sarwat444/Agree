@@ -1,0 +1,547 @@
+.nav-tabs>li>a
+{
+    color: #000 ;
+    background-color: #fff;
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover
+{
+    border-bottom-color: #ddd;
+    background-color: #f4a137;
+    border-radius: 0;
+}
+.nav-tabs>li.active>a
+{
+    color: #fff;
+}
+.user-profile-card
+{
+    margin-bottom: 30px;
+}
+.user-profile-car img
+{
+    border-radius: 4px;
+}
+.price .price-new
+{
+    color: #000;
+    font-weight: bold;
+}
+
+.box-item {
+    margin-bottom: 30px;
+}
+.box-item img {
+    height: 100%;
+    max-height: 300px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.box-menu {
+    text-align: center;
+}
+.box-menu ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.box-menu ul li {
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-bottom: 15px;
+    background: #666666;
+    font-size: 11px;
+    padding: 7px 30px;
+    display: inline-block;
+    color: #fff;
+}
+.box-menu
+{
+    padding: 0 !important;
+    margin-top: 20px !important;
+}
+.box-menu ul li.mixitup-control-active {
+    background: #000;
+}
+.contact-info
+{
+    margin-bottom: 30px;
+}
+.contact-info h3
+{
+    color: #f4a137;
+    margin-bottom: 28px;
+    font-weight: bold;
+}
+.contact-info ul{
+    padding: 0 ;
+    margin: 0 ;
+    list-style-type: none;
+    border-left: 3px solid #f4a137 ;
+    padding-left: 17px;
+}
+.contact-info ul li{
+    line-height: 39px;
+    font-size: 14px;
+    font-weight: 500;
+}
+.contact-info ul li .fa ,
+.contact-person ul li .fa{
+    color: #f4a137;
+}
+.contact-person h3
+{
+    color: #f4a137;
+    font-weight: bold;
+}
+.contact-person ul{
+    margin: 0 ;
+    padding: 0 ;
+    list-style-type: none;
+}
+.contact-person ul li{
+    line-height: 30px ;
+}
+.producttab{
+    border: 1px solid #eee;
+}
+
+.producttab .tabsslider.vertical-tabs ul.nav-tabs li a {
+    padding: 10px;
+    font-size: 13px;
+}
+.rating-box span.fa-stack .fa-star-half.fa-stack-1x:before {
+    color: #ebdb2c;
+}
+.rate_number
+{
+    float: left;
+    margin-right: 8px;
+}
+.stock-product {
+    padding: 5px;
+    border: 1px solid #cccccc4a;
+    text-align: center;
+    border-radius: 4px;
+    background-color: #fff;
+    border-radius: 0;
+    padding: 5px;
+    min-height: 280px;
+    margin-bottom: 34px;
+    text-align: center;
+}
+.stock-product h4 {
+    color: #444;
+    margin-top: 12px;
+    margin-bottom: 15px;
+}
+.stock-product .price .price-new {
+    color: #f0a181;
+    font-weight: bold;
+}
+.product_list_title
+{
+    color: #000000;
+    font-size: 18px;
+    margin: 0;
+    padding: 11px;
+    padding-top: 24px;
+    font-weight: 600;
+}
+.stock-product img{
+    height: 174px;
+    object-fit: cover;
+    max-height: 200px;
+}
+.tab-content
+{
+    background-color: #e9e9e9;
+}
+ul.yt-accordion li.accordion-group h3.accordion-heading span
+{
+    padding: 10px;
+    font-size: 13px;
+    display: block;
+    margin-left: 40px;
+    line-height: 24px;
+}
+.btn-primary
+{
+    background-color: #f4a137;
+    border: 0 ;
+}
+.btn-primary:hover
+{
+    background-color: #c2802b;
+}
+.text-primary
+{
+    color:  #f4a137 ;
+}
+.yt-accordion h1
+{
+    font-size: 19px;
+    color: #f4a137;
+}
+.productCategories ul{
+    list-style-type: none;
+    margin: 0 ;
+    padding: 0 ;
+}
+.productCategories ul li{
+    font-weight: bold;
+}
+.productCategories ul li ul li {
+    font-weight: 500 ;
+}
+.productCategories ul li .sub-menu
+{
+    padding-left: 15px;
+}
+.producttab .tabsslider.vertical-tabs ul.nav-tabs li a
+{
+    text-transform: lowercase;
+}
+
+
+.box-menu
+{
+    text-align: left;
+    padding: 10px;
+}
+#menu2
+{
+    padding: 0 ;
+}
+/* Edit Profile page */
+.avatar-upload {
+    position: relative;
+    max-width: 205px;
+    margin: 50px auto;
+}
+.avatar-upload .avatar-edit {
+    position: absolute;
+    right: 12px;
+    z-index: 1;
+    top: 10px;
+}
+.avatar-upload .avatar-edit input {
+    display: none;
+}
+.avatar-upload .avatar-edit input + label {
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    margin-bottom: 0;
+    border-radius: 100%;
+    background: #FFFFFF;
+    border: 1px solid transparent;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+    font-weight: normal;
+    transition: all 0.2s ease-in-out;
+}
+.avatar-upload .avatar-edit input + label:hover {
+    background: #f1f1f1;
+    border-color: #d6d6d6;
+}
+.avatar-upload .avatar-edit input + label:after {
+    content: "\f040";
+    font-family: 'FontAwesome';
+    color: #757575;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin: auto;
+}
+.avatar-upload .avatar-preview {
+    width: 192px;
+    height: 192px;
+    position: relative;
+    border-radius: 100%;
+    border: 6px solid #F8F8F8;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+}
+.avatar-upload .avatar-preview > div {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.certificate {
+    padding: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 4px 4px 4px #dddddd54;
+    position: relative;
+}
+.delete_certificate_btn
+{
+    position: absolute;
+    right: 6px;
+    top: 6px;
+}
+.delete_certificate_btn:hover
+{
+    background-color: #A60303FF;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.delete_certificate_btn  .fa
+{
+    background-color: #d30707;
+    color: #fff;
+    padding: 5px;
+    /* border-radius: 47%; */
+    font-size: 14px;
+    border-radius: 4px;
+}
+/*View Profile */
+#Activities ,
+#sub_categories{
+    background-color: #fff;
+}
+#Activities tbody td ul ,
+#sub_categories  tbody td ul
+{
+    list-style-type: none;
+    margin: 0 ;
+    padding: 0 ;
+}
+#Activities tbody td ul li,
+#sub_categories ul li
+{
+    font-size: 15px;
+    margin-top: 9px;
+    font-weight: 500;
+}
+#sub_categories ul li .Activities
+{
+    color:#f4a137 ;
+}
+#sub_categories ul li .fa ,
+#Activities tbody td ul li .fa
+{
+    color:#f4a137 ;
+    margin-right: 10px;
+    font-size: 20px;
+}
+.Activities ,
+.subcategories ,
+.about_us
+{
+    color: #f4a137;
+    font-size: 14px;
+    font-weight: bold;
+}
+#about-us table
+{
+    background-color: #fff;
+}
+#about-us  tbody tr  td p
+{
+    font-size: 16px;
+    line-height: 30px;
+}
+/* Image Galary */
+.album-image
+{
+    position: relative;
+}
+.album-image .delete_album_image
+{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+.album-image .delete_album_image .fa {
+    background-color: red;
+    color: #fff;
+    padding: 7px;
+    font-size: 10px;
+    border-radius: 4px;
+}
+.album-image .delete_album_image .fa:hover{
+    background-color: #ea0202;
+    cursor: pointer;
+}
+.producttab .tab-content
+{
+    min-height: 250px;
+}
+/* Edit Cover */
+
+/* Edit Profile page */
+.cover-upload{
+    position: relative;
+    margin: 50px auto;
+}
+.cover-upload .cover-edit {
+    position: absolute;
+    right: 12px;
+    z-index: 1;
+    top: 10px;
+}
+.cover-upload .cover-edit input {
+    display: none;
+}
+.cover-upload .cover-edit input + label {
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    margin-bottom: 0;
+    border-radius: 100%;
+    background: #FFFFFF;
+    border: 1px solid transparent;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+    font-weight: normal;
+    transition: all 0.2s ease-in-out;
+}
+.cover-upload .cover-edit input + label:hover {
+    background: #f1f1f1;
+    border-color: #d6d6d6;
+}
+.cover-upload .cover-edit input + label:after {
+    content: "\f040";
+    font-family: 'FontAwesome';
+    color: #757575;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin: auto;
+}
+.cover-upload .avatar-preview {
+    width: 192px;
+    height: 192px;
+    position: relative;
+    border-radius: 100%;
+    border: 6px solid #F8F8F8;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+}
+.cover-upload .avatar-preview > div {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/* Profile As Buyer */
+.SubCategories_buyer
+{
+    padding: 10px ;
+    margin-bottom: 20px;
+}
+.user-profile-card
+{
+    background-image: url(http://127.0.0.1:8000/uploads/Supplier/5/profile/cover.PNG);
+    background-size: contain;
+    padding: 20px;
+    max-height: 250px;
+}
+.product-sidebar
+{
+    background-color: #ffff;
+    padding-top: 10px;
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    margin-bottom: 10px;
+}
+
+.menu li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+.menu li a:hover {
+    background-color: #ddd;
+}
+
+.submenu {
+    display: none;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.submenu li a {
+    padding: 5px 10px;
+}
+
+.icon-arrow {
+    display: inline-block;
+    margin-left: 5px;
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid #333;
+    vertical-align: middle;
+}
+
+
+.box-list img
+{
+    height: 300px ;
+    object-fit: contain;
+    width: 100%;
+    border: 1px solid #ccc;
+}
+.box-list img:hover
+{
+    cursor: pointer;
+}
+.menu h3
+{
+    color: #000;
+    font-weight: bold;
+}
+.parent .icone
+{
+    float: right;
+}
+.parent .submenu
+{
+    list-style-type: none;
+}
+
+.right-block .caption h4 a{
+    color: #333;
+    font-size: 14px;
+}
+.category_content
+{
+    background-color: #ffff;
+    padding: 6px;
+}
+.right-block .caption h4 a
+{
+    font-weight: 700;
+    color: #444;
+}
+
+
+#update_form input {
+    width: 263px;
+    margin-bottom: 10px;
+    margin-top: 13px;
+}
+.profile_pages
+{
+    min-height: 700px;
+}

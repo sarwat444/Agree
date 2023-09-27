@@ -1,0 +1,73 @@
+{
+  "menu": [
+      {
+          "url": "categoryList",
+          "name": "ManageCategory",
+          "icon": "grid",
+          "slug": "categoryList"
+      },
+      {
+          "url": "sliderManage",
+          "name": "ManageSlider",
+          "icon": "copy",
+          "slug": "sliderManage"
+      },
+      {
+          "name": "Supplier",
+          "icon": "user-check",
+          "slug": "",
+          "submenu": [
+              {
+                  "url": "supplierList",
+                  "name": "ManageSupplier",
+                  "icon": "circle",
+                  "slug": "supplierList"
+              },
+              {
+                  "url": "topRated",
+                  "name": "TopRatedSupplier",
+                  "icon": "circle",
+                  "slug": "topRated"
+              }
+          ]
+      },
+      {
+          "name": "Admins",
+          "icon": "shield",
+          "slug": "",
+          "submenu": [
+              {
+                  "url": "manageAdmins",
+                  "name": "ManageAdmins",
+                  "icon": "circle",
+                  "slug": "manageAdmins"
+              },
+              {
+                  "url": "manageRole",
+                  "name": "ManageRole",
+                  "icon": "circle",
+                  "slug": "manageRole"
+              }
+          ]
+      },
+      {
+          "name": "Buyers",
+          "icon": "user",
+          "slug": "",
+          "submenu": [
+              {
+                  "url": "manageBuyer",
+                  "name": "ManageBuyer",
+                  "icon": "circle",
+                  "slug": "manageBuyer"
+              }
+          ]
+      },
+      {
+          "url": "ManageProducts",
+          "name": "ManageProducts",
+          "icon": "shopping-cart",
+          "slug": "ManageProducts"
+      }
+  ]
+}

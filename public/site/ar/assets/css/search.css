@@ -1,0 +1,18 @@
+.search_item
+{
+    text-align: center;
+}
+.search_item h5 {
+    text-align: center;
+    color: #000;
+    font-size: 15px;
+    margin: 17px;
+}
+.search_item p{
+    font-size: 20px;
+}
+.search_item  .phone
+{
+    font-size: 17px ;
+
+}

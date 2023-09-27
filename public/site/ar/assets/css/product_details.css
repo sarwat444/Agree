@@ -1,0 +1,29 @@
+.product-view
+{
+    background-color: #fff;
+    padding: 15px ;
+    margin-bottom: 20px;
+}
+.tab-content
+{
+    background-color: #fff;
+}
+.visiteSupplier{
+    background-color: #666;
+    border: 0;
+    border-radius: 4px;
+}
+.suppler-card .panel-body ul li {
+    line-height: 22px;
+    font-size: 15px;
+    margin-bottom: 3px;
+    font-weight: 600;
+}
+.suppler-card .panel-body ul
+{
+    margin-bottom: 15px ;
+}
+.thumb-vertical-outer ul li .thumbnail img
+{
+    height: 80px;
+}

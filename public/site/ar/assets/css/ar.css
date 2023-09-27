@@ -1,0 +1,64 @@
+body ,
+html
+{
+    font-family: 'Cairo', sans-serif !important;
+}
+.owl2-carousel
+{
+    direction: ltr;
+}
+.languages-block, .currencies-block
+{
+    /* border-left: 1px solid #d2d2d2; */
+    /* border-right: 1px solid #d2d2d2; */
+    /* z-index: 10; */
+    /* position: relative; */
+    vertical-align: top;
+    margin-top: 12px;
+    border: 0 ;
+/* margin: 0; */
+/* display: inline-block;*/
+}
+.whatsapp_icon {
+    color: #56cb5b;
+    font-size: 17px;
+    margin-right: 4px;
+    margin-left: 8px;
+}
+.languages-block img
+{
+    margin-left: 5px ;
+}
+.custom_menu .icone {
+    float: right;
+    margin-left: 13px;
+    margin-top: 8px;
+}
+.breadcrumb li:after
+{
+    content: "";
+    background: #fff;
+    border-left: 1px solid #e1e1e1;
+    border-top: 1px solid #e1e1e1;
+    display: inline-block;
+    height: 17px;
+    width: 16px;
+    position: absolute;
+    left: -8px;
+    top: 2px;
+    z-index: 1;
+    transform: rotate(-45deg);
+}
+.recentily_supplers .product-item-container h4
+{
+text-align: right;
+}
+.recentily_supplers .product-item-container .rating-box
+{
+    margin: 0 ;
+    text-align: left;
+}
+.product-layout .caption
+{
+    text-align: right;
+}
