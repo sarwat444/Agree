@@ -16,14 +16,11 @@ use Illuminate\Support\Facades\Route;
 use App\Actions\Fortify\UpdateUserProfileInformation;
 
 
-
-
-
 Route::get('/' ,  [HomeController::class ,  'index'])->name('home') ;
 
 Route::group(['as' => 'site.' ], function () {
-
     Route::get('/join_now' , [HomeController::class ,  'join_us'])->name('join_us') ;
-
+    Route::get('/Twaezef_Model' , [HomeController::class ,  'Twaezef_Model'])->name('Twaezef_Model') ;
+    Route::post('/save_tawzef_model' , [HomeController::class ,  'save_tawzef_model'])->name('save_tawzef_model') ;
 });
 
