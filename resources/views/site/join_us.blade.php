@@ -46,7 +46,7 @@
                 <div class="service-one__box">
                     <img src="{{asset(ASSET_URL.'site/en/assets/images/services/service-1-3.jpg')}}" alt="">
                     <div class="service-one__box-content">
-                        <h3><a href="service-details.html">Agricultural inspector <br> S-GAP</a></h3>
+                        <h3><a href="{{route('site.s_gab')}}">Agricultural inspector <br> S-GAP</a></h3>
                     </div><!-- /.service-one__box-content -->
                 </div><!-- /.service-one__box -->
             </div><!-- /.col-md-12 col-lg-4 -->

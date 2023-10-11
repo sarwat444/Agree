@@ -28,6 +28,9 @@ Route::group(['as' => 'site.' ], function () {
     Route::post('/save_Consultant_model' , [HomeController::class ,  'save_Consultant_model'])->name('save_Consultant_model') ;
 
 
+    Route::get('/s_gab' , [HomeController::class ,  's_gab'])->name('s_gab') ;
+    Route::post('/save_S_GAP_model' , [HomeController::class ,  'save_S_GAP_model'])->name('save_S_GAP_model') ;
+
 
 });
 

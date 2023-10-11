@@ -25,9 +25,6 @@ return new class extends Migration
             $table->string('file')->nullable() ;
             $table->timestamps();
         });
-
-
-
     }
 
     /**

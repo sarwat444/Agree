@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\{ConsultantModel, ExperienceField, Qualification, TawzefModel};
+use App\Models\{ConsultantModel, ExperienceField, Qualification, TawzefModel , S_GAPModel};
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Http\Request;
@@ -97,6 +97,23 @@ class HomeController extends Controller
         }
         return null;
     }
+    public function Uploads_gapFile(Request $request, $key): ?string {
+        $uploadedFiles = $request->file();
+        $uploadedFile = array_key_exists($key, $uploadedFiles) ? $uploadedFiles[$key] : null;
+        if ($uploadedFile) {
+            if ($uploadedFile->getError() === UPLOAD_ERR_OK) {
+                $filename = uniqid().'.'.$uploadedFile->getClientOriginalExtension();
+                Storage::disk('publicDirectory')->putFileAs(
+                    'site/uploads/s_Gap/',
+                    $uploadedFile,
+                    $filename
+                );
+                return 'site/uploads/s_Gap/'. $filename;
+            }
+        }
+        return null;
+    }
+
 
 
 
@@ -114,6 +131,10 @@ class HomeController extends Controller
             'name'=>'required' ,
             'email' =>'required' ,
             'phone' => 'required' ,
+            'Have_certifacate' => 'required' ,
+            'specilization' => 'required' ,
+            'Biography_file' =>  'required' ,
+            'quilifaction' =>  'required' ,
             'file' => 'required'
         ]) ;
         // If validation fails, return the error response
@@ -126,7 +147,6 @@ class HomeController extends Controller
         if(!empty($request->file)) {
             $SupplierNewImageCode = $this->UploadConsultantfFile($request, "file");
         }
-
         // Create a new instance of the Twawzef model and fill it with the request data
         $consult  = new ConsultantModel();
         $consult->name = $request->input('name');
@@ -135,7 +155,7 @@ class HomeController extends Controller
         $consult->experience_years = $request->input('experience_years');
         $consult->experience_years_public = $request->input('experience_years_public') ;
         $consult->experience_filed = $request->input('experience_filed') ;
-        $consult->quilifaction = $request->input('quilifaction') ;
+        $consult->qualification_id  = $request->input('quilifaction') ;
         $consult->file = $SupplierNewImageCode;
         // Save the Twawzef model to the database
         $consult->save();
@@ -143,4 +163,50 @@ class HomeController extends Controller
         return redirect()->back()->with('success' , 'Data Is Saved Successfuly') ;
 
     }
-}
+
+    /** SAGB- Model*/
+
+        public  function s_gab(){
+            $Quilifactions =  Qualification::get() ;
+            $experience_filed  = ExperienceField::get() ;
+            return  view('site.Namozag.S-GAP', compact('Quilifactions' ,'experience_filed')) ;
+        }
+
+        public  function save_S_GAP_model()
+        {
+            $validator = Validator::make($request->all() , [
+                'name'=>'required' ,
+                'email' =>'required' ,
+                'phone' => 'required' ,
+                'Have_certifacate' => 'required' ,
+                'quilifaction' =>  'required' ,
+                'file' => 'required'
+            ]) ;
+            // If validation fails, return the error response
+            if ($validator->fails()) {
+                return response()->json([
+                    'error' => $validator->errors()->first()
+                ], 400);
+            }
+            $SupplierNewImageCode = null ;
+            if(!empty($request->file)) {
+                $SupplierNewImageCode = $this->Uploads_gapFile($request, "file");
+            }
+            if(!empty($request->Biography_file)) {
+                $gap_file = $this->Uploads_gapFile($request, "Biography_file");
+            }
+
+            // Create a new instance of the Twawzef model and fill it with the request data
+            $S_GAP_MODEL  = new S_GAPModel();
+            $S_GAP_MODEL->name = $request->input('name');
+            $S_GAP_MODEL->email = $request->input('email');
+            $S_GAP_MODEL->phone = $request->input('phone');
+            $S_GAP_MODEL->have_certiface = $request->input('Have_certifacate');
+            $S_GAP_MODEL->s_GAP_file = $gap_file ;
+            $S_GAP_MODEL->qualification_id = $request->input('quilifaction') ;
+            $S_GAP_MODEL->file = $SupplierNewImageCode;
+            $S_GAP_MODEL->save();
+            // Return a success response
+            return redirect()->back()->with('success' , 'Data Is Saved Successfuly') ;
+        }
+    }

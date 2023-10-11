@@ -53,8 +53,8 @@
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label>Do you have a supervisor certificate? S-GAP</label><br>
-                                <input type="radio" name="sex" value="0"  id="yes" checked> <label for="yes"> Yes </label>
-                                <input type="radio" name="sex" value="1" id="no">  <label for="no"> No </label>
+                                <input type="radio" name="Have_certifacate" value="0"  id="yes" checked> <label for="yes"> Yes </label>
+                                <input type="radio" name="Have_certifacate" value="1" id="no">  <label for="no"> No </label>
                             </div>
                         </div>
                     </div>
@@ -62,13 +62,13 @@
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label>Specilization </label>
-                                    <input type="text" name="specilization" class="form-control">
+                                    <input type="text" name="specilization" class="form-control" placeholder="Specilization" required>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label>Biography</label>
-                                    <input type="file" name="file" class="form-control"  required>
+                                    <input type="file" name="Biography_file" class="form-control"  required>
                                 </div>
                             </div>
                         </div>
@@ -77,7 +77,7 @@
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label>Qulififcation</label>
-                                <select class="form-control" name="quilifaction">
+                                <select class="form-control" name="quilifaction" required>
                                     <option selected >Select ... </option>
                                     @foreach($Quilifactions as $qulification)
                                         <option value="{{$qulification->id}}">{{$qulification->title }}</option>
