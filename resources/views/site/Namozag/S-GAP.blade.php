@@ -12,13 +12,13 @@
             <ul class="thm-breadcrumb list-unstyled">
                 <li><a href="index.html">Home</a></li>
                 <li>/</li>
-                <li><span>Consultant registration form</span></li>
+                <li><span>Agricultural inspector registration form S-GAP </span></li>
             </ul><!-- /.thm-breadcrumb list-unstyled -->
-            <h2>Consultant registration form</h2>
+            <h2>Agricultural inspector registration form S-GAP</h2>
         </div><!-- /.container -->
     </section><!-- /.page-header -->
     <section class="Tawzef_model mt-50 mb-50">
-        <form method="post" action="{{route('site.save_Consultant_model')}}" enctype="multipart/form-data">
+        <form method="post" action="{{route('site.save_S_GAP_model')}}" enctype="multipart/form-data">
             @csrf
             <div class="row">
                 <div class="container">
@@ -50,36 +50,30 @@
                                 <input name="phone" type="text" class="form-control" placeholder="Phone" required>
                             </div>
                         </div>
-
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label>Years of Experience on Agricultural sector </label>
-                                <input name="experience_years" type="text" class="form-control" placeholder="Years of Experience" required>
+                                <label>Do you have a supervisor certificate? S-GAP</label><br>
+                                <input type="radio" name="sex" value="0"  id="yes" checked> <label for="yes"> Yes </label>
+                                <input type="radio" name="sex" value="1" id="no">  <label for="no"> No </label>
                             </div>
                         </div>
                     </div>
-
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label>Years of Experience On general </label>
-                                    <input name="experience_years_public" type="text" class="form-control" placeholder="Phone" required>
+                                    <label>Specilization </label>
+                                    <input type="text" name="specilization" class="form-control">
                                 </div>
                             </div>
-
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label>Experience Field </label><br>
-                                    <select class="form-control" name="experience_filed">
-                                        <option selected >Select ... </option>
-                                        @foreach($experience_filed as $filed)
-                                            <option value="{{$filed->id}}">{{$filed->title }}</option>
-                                        @endforeach
-                                    </select>
+                                    <label>Biography</label>
+                                    <input type="file" name="file" class="form-control"  required>
                                 </div>
                             </div>
                         </div>
-                        <div class="row">
+
+                    <div class="row">
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label>Qulififcation</label>
@@ -93,7 +87,7 @@
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label>File</label>
+                                <label>S-Gap File </label>
                                 <input type="file" name="file" class="form-control"  required>
                             </div>
                         </div>

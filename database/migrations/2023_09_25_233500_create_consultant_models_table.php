@@ -18,12 +18,16 @@ return new class extends Migration
             $table->string('name')->nullable() ;
             $table->string('phone')->nullable() ;
             $table->string('email')->unique() ;
-            $table->string('sex')->nullable();
             $table->integer('experience_years')->nullable();
-            $table->foreignId('qualification_id')->constrained('qualifications')->cascadeOnUpdate() ;
+            $table->integer('experience_years_public')->nullable();
+            $table->foreignId('quilifaction')->constrained('qualifications')->cascadeOnUpdate() ;
+            $table->foreignId('experience_filed')->constrained('experience_fields')->cascadeOnUpdate() ;
             $table->string('file')->nullable() ;
             $table->timestamps();
         });
+
+
+
     }
 
     /**
