@@ -8453,4 +8453,13 @@ h6 {
     left: 30px;
   }
 }
+
+.page-header .container {
+    position: relative;
+    z-index: 10;
+    padding-top: 51px;
+    padding-bottom: 160px;
+    text-align: center;
+    padding-bottom: 50px;
+}
 /*# sourceMappingURL=main.css.map */

@@ -13,15 +13,12 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('gap_models', function (Blueprint $table) {
+        Schema::create('service_request_models', function (Blueprint $table) {
             $table->id();
+            $table->string('type')->nullable() ;
             $table->string('name')->nullable() ;
             $table->string('phone')->nullable() ;
             $table->string('email')->unique() ;
-            $table->tinyInteger('have_certiface')->default(0);
-            $table->foreignId('qualification_id')->constrained('qualifications')->cascadeOnUpdate() ;
-            $table->string('file')->nullable() ;
-            $table->string('s_GAP_file')->nullable() ;
             $table->timestamps();
         });
     }
@@ -33,6 +30,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('s-_g_a_p_models');
+        Schema::dropIfExists('service_request_models');
     }
 };

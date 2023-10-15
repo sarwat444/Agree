@@ -28,33 +28,27 @@
                     @if(session()->has('error'))
                         <div class="alert alert-danger">{{session('error')}}</div>
                     @endif
+
                     <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="type">Type</label>
-                                    <select id="type" class="form-control" name="type">
-                                        <option value="Dimitra Tech">Dimitra Tech </option>
-                                        <option value="Sammi Glory">Sammi Glory</option>
-                                        <option value="Business Development">Business Development</option>
-                                        <option value="Technical and administrative badges">Technical and administrative badges</option>
-                                        <option value="other">Other</option>
-                                    </select>
-                                </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="type">Type</label>
+                                <select id="type" class="form-control" name="type">
+                                    <option value="Dimitra Tech">Dimitra Tech </option>
+                                    <option value="Sammi Glory">Sammi Glory</option>
+                                    <option value="Business Development">Business Development</option>
+                                    <option value="Technical and administrative badges">Technical and administrative badges</option>
+                                    <option value="other">Other</option>
+                                </select>
                             </div>
-                     </div>
-                    <div class="row">
+                        </div>
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label for="name">Name</label>
                                 <input id="name" name="name" type="text" class="form-control" placeholder="Name" required>
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="email">Email</label>
-                                <input id="email" name="email" type="email" class="form-control" placeholder="Email" required>
-                            </div>
-                        </div>
+
                     </div>
                     <div class="row">
                         <div class="col-md-6">
@@ -64,6 +58,15 @@
                             </div>
                         </div>
                         <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input id="email" name="email" type="email" class="form-control" placeholder="Email" required>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row mb-3 d-none" id="notes">
+                        <div class="col-md-12">
                             <label for="notes">Notes</label>
                             <textarea id="notes" class="form-control" placeholder="Add Notes"  name="notes"></textarea>
                         </div>
@@ -75,5 +78,21 @@
     </section>
 @endsection
 @push('scripts')
+<script>
+$(document).ready(function()
+{
+    $('#type').on('change' , function(){
+        if($(this).val() == 'other')
+        {
+            $('#notes').removeClass('d-none') ;
+        }else
+        {
+            $('#notes').addClass('d-none') ;
+        }
+
+    });
+
+});
+</script>
 @endpush
 

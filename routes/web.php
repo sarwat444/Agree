@@ -32,5 +32,14 @@ Route::group(['as' => 'site.' ], function () {
     Route::post('/save_S_GAP_model' , [HomeController::class ,  'save_S_GAP_model'])->name('save_S_GAP_model') ;
 
 
+    Route::get('/view_service_requester' , [HomeController::class ,  'view_service_requester'])->name('view_service_requester') ;
+    Route::post('/save_service_request_model' , [HomeController::class ,  'save_service_request_model'])->name('save_service_request_model') ;
+
+    /** Home Routes   */
+    Route::get('/home' , [HomeController::class ,  'home'])->name('home') ;
+    Route::get('/about' , [HomeController::class ,  'about'])->name('about') ;
+    Route::get('/Serives' , [HomeController::class ,  'Serives'])->name('Serives') ;
+    Route::get('/contact' , [HomeController::class ,  'contact'])->name('contact') ;
+
 });
 

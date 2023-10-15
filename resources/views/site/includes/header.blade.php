@@ -13,7 +13,7 @@
                         <a href="#" class="fab fa-pinterest-p"></a>
                         <a href="#" class="fab fa-instagram"></a>
                     </div><!-- /.topbar__social -->
-                    <p>Welcome to Agriculture HTML Template</p>
+                    <p>Welcome to Sustainable Union (SUT) </p>
                 </div><!-- /.topbar__left -->
                 <div class="topbar__right">
                     <a href="#"><i class="agrikon-icon-email"></i>needhelp@company.com</a>
@@ -28,45 +28,21 @@
                     <span class="fa fa-bars mobile-nav__toggler"></span>
                 </div><!-- /.logo-box -->
                 <ul class="main-menu__list">
-                    <li class="dropdown">
-                        <a href="index.html">Home</a>
-                        <ul>
-                            <li>
-                                <a href="index.html">Home One</a>
-                            </li>
-                            <li><a href="index-2.html">Home Two</a></li>
-                            <li class="dropdown">
-                                <a href="#">Header Styles</a>
-                                <ul>
-                                    <li><a href="index.html">Header One</a></li>
-                                    <li><a href="index-2.html">Header Two</a></li>
-                                </ul>
-                            </li>
-                        </ul>
+                    <li>
+                        <a href="{{route('site.home')}}">Home</a>
+
                     </li>
                     <li>
-                        <a href="about.html">About</a>
+                        <a href="{{route('site.about')}}">About Us</a>
                     </li>
-                    <li class="dropdown"><a href="#">Pages</a>
-                        <ul>
-                            <li><a href="services.html">Services</a></li>
-                            <li><a href="service-details.html">Service Details</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                        </ul>
+                    <li>
+                        <a href="{{route('site.Serives')}}">Serives </a>
                     </li>
-                    <li class="dropdown">
-                        <a href="projects.html">Projects</a>
-                        <ul>
-                            <li><a href="projects.html">Projects</a></li>
-                            <li><a href="project-details.html">Projects Details</a></li>
-                        </ul>
+                    <li>
+                        <a href="{{route('site.contact')}}">Contact Us  </a>
                     </li>
-                    <li class="dropdown"><a href="blog.html">News</a>
-                        <ul>
-                            <li><a href="blog.html">News</a></li>
-                            <li><a href="blog-details.html">News Details</a></li>
-                        </ul>
-                    </li>
+
+
                 </ul>
                 <!-- /.main-menu__list -->
 
