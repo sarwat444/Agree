@@ -1,11 +1,13 @@
 <?php
  const ASSET_URL = '';
+ CONST ASSET_URL_PUBLIC = '' ;
 
  //const ASSET_PATH = 'public/';
 
  //CONST ASSET_URL = 'public/' ;
 
 
+use App\Http\Controllers\Admin\DashboardController;
 use App\Models\User;
 use Illuminate\Http\Request;
 use App\Mail\SendVerificationEmail;
@@ -42,4 +44,15 @@ Route::group(['as' => 'site.' ], function () {
     Route::get('/contact' , [HomeController::class ,  'contact'])->name('contact') ;
 
 });
+/** admin dashboard routes */
+Route::group(['prefix' => 'admins/dashboard', 'as' => 'dashboard.'], function () {
+
+    Route::get('/' , [DashboardController::class , 'home'])->name('index') ;
+    Route::get('/tawzef_model' , [DashboardController::class , 'tawzef_model'])->name('tawzef_model') ;
+
+});
+
+
+
+
 
