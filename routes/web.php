@@ -7,7 +7,7 @@
  //CONST ASSET_URL = 'public/' ;
 
 
-use App\Http\Controllers\Admin\DashboardController;
+use App\Http\Controllers\Admin\{DashboardController ,NamozagsController};
 use App\Models\User;
 use Illuminate\Http\Request;
 use App\Mail\SendVerificationEmail;
@@ -48,7 +48,8 @@ Route::group(['as' => 'site.' ], function () {
 Route::group(['prefix' => 'admins/dashboard', 'as' => 'dashboard.'], function () {
 
     Route::get('/' , [DashboardController::class , 'home'])->name('index') ;
-    Route::get('/tawzef_model' , [DashboardController::class , 'tawzef_model'])->name('tawzef_model') ;
+    Route::get('/tawzef_model' , [NamozagsController::class , 'tawzef_model'])->name('tawzef_model') ;
+    Route::get('/Consultant_model' , [NamozagsController::class , 'Consultant_model'])->name('Consultant_model') ;
 
 });
 

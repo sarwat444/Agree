@@ -63,7 +63,7 @@
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label>Years of Experience On general </label>
-                                    <input name="experience_years_public" type="text" class="form-control" placeholder="Phone" required>
+                                    <input name="experience_years_public" type="text" class="form-control" placeholder="Years of Experience On general" required>
                                 </div>
                             </div>
 

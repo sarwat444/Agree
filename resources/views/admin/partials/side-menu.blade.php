@@ -16,6 +16,8 @@
                     </a>
                     <ul class="sub-menu" aria-expanded="false">
                         <li><a href="{{route('dashboard.tawzef_model')}}" key="t-products"> Tawzef Model</a></li>
+                        <li><a href="{{route('dashboard.Consultant_model')}}" key="t-products"> Consultant registration form</a></li>
+                        <li><a href="{{route('dashboard.tawzef_model')}}" key="t-products"> Tawzef Model</a></li>
                     </ul>
                 </li>
             </ul>

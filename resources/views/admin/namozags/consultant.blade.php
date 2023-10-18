@@ -3,11 +3,11 @@
 @push('styles')
     <link href="{{asset(ASSET_URL_PUBLIC.'/assets/admin/libs/sweetalert2/sweetalert2.min.css')}}" rel="stylesheet"
           type="text/css"/>
-        <link href="{{asset(ASSET_URL_PUBLIC.'/assets/admin/libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css')}}"
-              rel="stylesheet" type="text/css"/>
-        <link
-            href="{{asset(ASSET_URL_PUBLIC.'/assets/admin/libs/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css')}}"
-            rel="stylesheet" type="text/css"/>
+    <link href="{{asset(ASSET_URL_PUBLIC.'/assets/admin/libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css')}}"
+          rel="stylesheet" type="text/css"/>
+    <link
+        href="{{asset(ASSET_URL_PUBLIC.'/assets/admin/libs/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css')}}"
+        rel="stylesheet" type="text/css"/>
 
 @endpush
 @section('content')
@@ -23,20 +23,25 @@
                             <th>Phone</th>
                             <th>Email</th>
                             <th>Quilifaction</th>
-                            <th>Sex</th>
+                            <th>Experience.Y.C</th>
+                            <th>Experience.Y.C Agreculture F</th>
+                            <th>Agreculture Fileds </th>
                             <th>Attachments: CV</th>
                             <th>Created</th>
                         </tr>
                         </thead>
                         <tbody>
-                        @forelse($tawzef_models as $t_model)
+                        @forelse($consultant_models as $t_model)
+
                             <tr>
                                 <td>{{ $loop->iteration }}</td>
                                 <td class="center">{{ $t_model->name }}</td>
                                 <td class="center">{{ $t_model->phone }}</td>
                                 <td class="center">{{ $t_model->email }}</td>
                                 <td class="center">{{ $t_model->quilifaction->title }}</td>
-                                <td class="center">@if($t_model->sex==1) <span class="badge badge-soft-success">male</span> @else <span class="badge badge-soft-primary">female</span> @endif</td>
+                                <td class="center">{{ $t_model->experience_years_public }}</td>
+                                <td class="center">{{ $t_model->experience_years }}</td>
+                                <td class="center">{{ $t_model->experience->title }}</td>
                                 <td><a href="{{asset(ASSET_URL_PUBLIC.$t_model->file)}}" class="btn btn-primary">View Attachments</a></td>
                                 <td class="center">{{ $t_model->created_at }}</td>
                             </tr>

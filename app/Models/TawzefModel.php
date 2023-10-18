@@ -10,6 +10,6 @@ class TawzefModel extends Model
     use HasFactory;
     public function quilifaction()
     {
-        return $this->belongsTo(Qualification::class) ;
+        return $this->belongsTo(Qualification::class ,'qulifaction' , 'id' ) ;
     }
 }

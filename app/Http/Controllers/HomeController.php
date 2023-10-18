@@ -46,14 +46,13 @@ class HomeController extends Controller
         if(!empty($request->file)) {
             $SupplierNewImageCode = $this->UploadTawzefFile($request, "file");
         }
-
         // Create a new instance of the Twawzef model and fill it with the request data
         $twawzef = new TawzefModel();
         $twawzef->name = $request->input('name');
         $twawzef->email = $request->input('email');
         $twawzef->phone = $request->input('phone');
         $twawzef->sex = $request->input('sex');
-        $twawzef->qulifaction = $request->input('qulifaction') ;
+        $twawzef->qulifaction = $request->input('quilifaction') ;
         $twawzef->file = $SupplierNewImageCode;
 
         // Save the Twawzef model to the database
@@ -89,7 +88,7 @@ class HomeController extends Controller
             if ($uploadedFile->getError() === UPLOAD_ERR_OK) {
                 $filename = uniqid().'.'.$uploadedFile->getClientOriginalExtension();
                 Storage::disk('publicDirectory')->putFileAs(
-                    'site/uploads/tawzef/',
+                    'site/uploads/consult/',
                     $uploadedFile,
                     $filename
                 );
@@ -132,9 +131,9 @@ class HomeController extends Controller
             'name'=>'required' ,
             'email' =>'required' ,
             'phone' => 'required' ,
-            'Have_certifacate' => 'required' ,
-            'specilization' => 'required' ,
-            'Biography_file' =>  'required' ,
+            'experience_years' => 'required' ,
+            'experience_years_public' => 'required' ,
+            'experience_filed' =>  'required' ,
             'quilifaction' =>  'required' ,
             'file' => 'required'
         ]) ;
