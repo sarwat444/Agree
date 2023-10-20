@@ -8,9 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class ConsultantModel extends Model
 {
     use HasFactory;
-    public function quilifaction()
+    public function quilifaction_data()
     {
-        return $this->belongsTo(Qualification::class ,'qualification_id' , 'id' ) ;
+        return $this->belongsTo(Qualification::class ,'quilifaction' , 'id' ) ;
     }
     public function experience()
     {

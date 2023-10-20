@@ -71,6 +71,7 @@
                                 <div class="form-group">
                                     <label>Experience Field </label><br>
                                     <select class="form-control" name="experience_filed">
+
                                         <option selected >Select ... </option>
                                         @foreach($experience_filed as $filed)
                                             <option value="{{$filed->id}}">{{$filed->title }}</option>

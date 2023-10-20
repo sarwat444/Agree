@@ -1,7 +1,3 @@
-<div class="preloader">
-    <img class="preloader__image" width="55" src="{{asset('site/en/assets/images/loader.png')}}" alt="">
-</div><!-- /.preloader -->
-<div class="page-wrapper">
 
     <header class="main-header">
         <div class="topbar">
@@ -13,7 +9,7 @@
                         <a href="#" class="fab fa-pinterest-p"></a>
                         <a href="#" class="fab fa-instagram"></a>
                     </div><!-- /.topbar__social -->
-                    <p>Welcome to Sustainable Union (SUT) </p>
+                    <p>SUSTAINABLE UNION TRADING </p>
                 </div><!-- /.topbar__left -->
                 <div class="topbar__right">
                     <a href="#"><i class="agrikon-icon-email"></i>needhelp@company.com</a>
@@ -24,7 +20,7 @@
         <nav class="main-menu">
             <div class="container">
                 <div class="logo-box">
-                    <a href="index.html" aria-label="logo image"><img src="{{asset('site/en/assets/images/logo-dark.png')}} " width="153" alt=""></a>
+                    <a href="index.html" aria-label="logo image"><img src="{{asset('site/en/assets/images/logo-dark.png')}} " width="250" alt=""></a>
                     <span class="fa fa-bars mobile-nav__toggler"></span>
                 </div><!-- /.logo-box -->
                 <ul class="main-menu__list">
@@ -61,7 +57,6 @@
         </nav>
         <!-- /.main-menu -->
     </header><!-- /.main-header -->
-
     <div class="stricky-header stricked-menu main-menu">
         <div class="sticky-header__content"></div><!-- /.sticky-header__content -->
     </div><!-- /.stricky-header -->

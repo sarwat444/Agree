@@ -155,7 +155,7 @@ class HomeController extends Controller
         $consult->experience_years = $request->input('experience_years');
         $consult->experience_years_public = $request->input('experience_years_public') ;
         $consult->experience_filed = $request->input('experience_filed') ;
-        $consult->qualification_id  = $request->input('quilifaction') ;
+        $consult->quilifaction  = $request->input('quilifaction') ;
         $consult->file = $SupplierNewImageCode;
         // Save the Twawzef model to the database
         $consult->save();
@@ -238,9 +238,9 @@ class HomeController extends Controller
             $service->name = $request->input('name');
             $service->email = $request->input('email');
             $service->phone = $request->input('phone');
-            if(!empty($request->input('note')))
+            if(!empty($request->input('notes')))
             {
-                $service->note = $request->input('note');
+                $service->note = $request->input('notes');
             }
             // Save the Twawzef model to the database
             $service->save();

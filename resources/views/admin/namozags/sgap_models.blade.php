@@ -22,29 +22,30 @@
                             <th>Title</th>
                             <th>Phone</th>
                             <th>Email</th>
+                            <th>Have Certifacte</th>
                             <th>Quilifaction</th>
-                            <th>Experience.Y.C</th>
-                            <th>Experience.Y.C Agreculture F</th>
-                            <th>Agreculture Fileds </th>
-                            <th>Attachments: CV</th>
+                            <th>Crtifcate</th>
+                            <th>S-GAP Certifacte</th>
                             <th>Created</th>
                         </tr>
                         </thead>
                         <tbody>
-                        @forelse($consultant_models as $t_model)
-
+                        @forelse($sgap_models as $t_model)
                             <tr>
                                 <td>{{ $loop->iteration }}</td>
                                 <td class="center">{{ $t_model->name }}</td>
                                 <td class="center">{{ $t_model->phone }}</td>
                                 <td class="center">{{ $t_model->email }}</td>
-                                @if(!empty($t_model->quilifaction_data))
-                                <td class="center">{{ $t_model->quilifaction_data->title }}</td>
-                                @endif
-                                <td class="center">{{ $t_model->experience_years_public }}</td>
-                                <td class="center">{{ $t_model->experience_years }}</td>
-                                <td class="center">{{ $t_model->experience->title }}</td>
+                                <td class="center">
+                                    @if($t_model->have_certiface == 1 )
+                                        <p class="text-success badge badge-soft-successe"> Yes </p>
+                                        @else
+                                        <p class="text-success badge badge-soft-danger"> No </p>
+                                    @endif
+                                </td>
+                                <td class="center">{{ $t_model->quilifaction->title }}</td>
                                 <td><a href="{{asset(ASSET_URL_PUBLIC.$t_model->file)}}" class="btn btn-primary">View Attachments</a></td>
+                                <td><a href="{{asset(ASSET_URL_PUBLIC.$t_model->s_GAP_file)}}" class="btn btn-primary">View Attachments</a></td>
                                 <td class="center">{{ $t_model->created_at }}</td>
                             </tr>
                         @empty

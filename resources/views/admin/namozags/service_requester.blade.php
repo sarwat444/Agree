@@ -22,30 +22,24 @@
                             <th>Title</th>
                             <th>Phone</th>
                             <th>Email</th>
-                            <th>Quilifaction</th>
-                            <th>Experience.Y.C</th>
-                            <th>Experience.Y.C Agreculture F</th>
-                            <th>Agreculture Fileds </th>
-                            <th>Attachments: CV</th>
+                            <th>Note</th>
                             <th>Created</th>
                         </tr>
                         </thead>
                         <tbody>
-                        @forelse($consultant_models as $t_model)
-
+                        @forelse($services_requests as $service)
                             <tr>
                                 <td>{{ $loop->iteration }}</td>
-                                <td class="center">{{ $t_model->name }}</td>
-                                <td class="center">{{ $t_model->phone }}</td>
-                                <td class="center">{{ $t_model->email }}</td>
-                                @if(!empty($t_model->quilifaction_data))
-                                <td class="center">{{ $t_model->quilifaction_data->title }}</td>
+                                <td class="center">{{ $service->name }}</td>
+                                <td class="center">{{ $service->phone }}</td>
+                                <td class="center">{{ $service->email }}</td>
+                                @if(!empty($service->note))
+                                <td class="center">{{ $service->note }}</td>
+                                 @else
+                                    <td class="text-center text-danger"> No Notes</td>
+
                                 @endif
-                                <td class="center">{{ $t_model->experience_years_public }}</td>
-                                <td class="center">{{ $t_model->experience_years }}</td>
-                                <td class="center">{{ $t_model->experience->title }}</td>
-                                <td><a href="{{asset(ASSET_URL_PUBLIC.$t_model->file)}}" class="btn btn-primary">View Attachments</a></td>
-                                <td class="center">{{ $t_model->created_at }}</td>
+                                <td class="center">{{ $service->created_at }}</td>
                             </tr>
                         @empty
                             <tr>

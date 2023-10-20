@@ -2,38 +2,72 @@
 @push('styles')
 @endpush
 @section('content')
-<section class="service-one service-one__about">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 col-lg-4">
-                <div class="service-one__box">
-                    <img src="assets/images/services/service-1-1.jpg" alt="">
-                    <div class="service-one__box-content">
-                        <h3><a href="service-details.html">Agriculture Leader</a></h3>
-                    </div><!-- /.service-one__box-content -->
-                </div><!-- /.service-one__box -->
-            </div><!-- /.col-md-12 col-lg-4 -->
-            <div class="col-md-12 col-lg-4">
-                <div class="service-one__box">
-                    <img src="assets/images/services/service-1-2.jpg" alt="">
-                    <div class="service-one__box-content">
-                        <h3><a href="service-details.html">Quality Standards</a></h3>
-                    </div><!-- /.service-one__box-content -->
-                </div><!-- /.service-one__box -->
-            </div><!-- /.col-md-12 col-lg-4 -->
-            <div class="col-md-12 col-lg-4">
-                <div class="service-one__box">
-                    <img src="assets/images/services/service-1-3.jpg" alt="">
-                    <div class="service-one__box-content">
-                        <h3><a href="service-details.html">Organic Services</a></h3>
-                    </div><!-- /.service-one__box-content -->
-                </div><!-- /.service-one__box -->
-            </div><!-- /.col-md-12 col-lg-4 -->
-        </div><!-- /.row -->
-    </div><!-- /.container -->
-</section><!-- /.service-one -->
+    <section class="page-header">
+        <div class="page-header__bg" style="background-image: url({{asset('site/en/assets/images/backgrounds/page-header-bg-1-1.jpg')}});"></div>
+        <!-- /.page-header__bg -->
+        <div class="container">
+            <ul class="thm-breadcrumb list-unstyled">
+                <li><a href="index.html">Home</a></li>
+                <li>/</li>
+                <li><span>About</span></li>
+            </ul><!-- /.thm-breadcrumb list-unstyled -->
+            <h2>About Us</h2>
+        </div><!-- /.container -->
+    </section>
+    <section class="about-three">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="about-three__image">
+                        <img src="{{asset('site/en/assets/images/resources/about-3-2.jpg')}}" alt="">
+                    </div><!-- /.about-three__image -->
+                </div><!-- /.col-lg-6 -->
+                <div class="col-lg-7">
+                    <div class="about-three__content">
+                        <div class="block-title">
+                            <div class="block-title__image"></div><!-- /.block-title__image -->
+                            <p>Get to know us</p>
+                            <h3>Sustainable Union Trading (SUT)</h3>
+                        </div><!-- /.block-title -->
+                        <ul class="about-three__list list-unstyled">
+                            <li>
+                                <i class="fa fa-check-circle"></i>
+                                Agricultural technologies
+                            </li>
+                            <li>
+                                <i class="fa fa-check-circle"></i>
+                                Developing  administrative work
 
-<div class="client-carousel client-carousel__has-border-top client-carousel__about-page">
+                            </li>
+                            <li>
+                                <i class="fa fa-check-circle"></i>
+                                 Management and technical consulting
+
+                            </li>
+                            <li>
+                                <i class="fa fa-check-circle"></i>
+                                Project management and operation
+                            </li>
+                        </ul><!-- /.about-three__list list-unstyled -->
+                        <div class="about-three__summery">
+                            <p>
+                                Sustainable Union (SUT) was established through an alliance of expertise in
+                                the agricultural sector with the aim of growing this sector and making it
+                                keep pace with modern technologies in the world of agricultural production
+                                and management. <br>
+
+                                Our goal is to make this sector more automated, modern way
+                                Our vision is an agricultural world with added value that makes it a more attractive reality </p>
+                        </div><!-- /.about-three__summery -->
+
+                    </div><!-- /.about-three__content -->
+                </div><!-- /.col-lg-6 -->
+            </div><!-- /.row -->
+        </div><!-- /.container -->
+    </section><!-- /.about-three -->
+
+
+    <div class="client-carousel client-carousel__has-border-top client-carousel__about-page">
     <div class="container">
         <div class="thm-swiper__slider swiper-container" data-swiper-options='{"spaceBetween": 140, "slidesPerView": 5, "autoplay": { "delay": 5000 }, "breakpoints": {
         "0": {
@@ -63,217 +97,50 @@
     }}'>
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <img src="assets/images/resources/brand-1-1.png" alt="">
+                    <img src="{{asset('site/en/assets/images/resources/brand-1-1.png')}}" alt="">
                 </div><!-- /.swiper-slide -->
                 <div class="swiper-slide">
-                    <img src="assets/images/resources/brand-1-1.png" alt="">
+                    <img src="{{asset('site/en/assets/images/resources/brand-1-2.png')}}" alt="">
                 </div><!-- /.swiper-slide -->
                 <div class="swiper-slide">
-                    <img src="assets/images/resources/brand-1-1.png" alt="">
+                    <img src="{{asset('site/en/assets/images/resources/brand-1-1.png')}}" alt="">
                 </div><!-- /.swiper-slide -->
                 <div class="swiper-slide">
-                    <img src="assets/images/resources/brand-1-1.png" alt="">
+                    <img src="{{asset('site/en/assets/images/resources/brand-1-2.png')}}" alt="">
                 </div><!-- /.swiper-slide -->
                 <div class="swiper-slide">
-                    <img src="assets/images/resources/brand-1-1.png" alt="">
+                    <img src="{{asset('site/en/assets/images/resources/brand-1-1.png')}}" alt="">
                 </div><!-- /.swiper-slide -->
                 <div class="swiper-slide">
-                    <img src="assets/images/resources/brand-1-1.png" alt="">
+                    <img src="{{asset('site/en/assets/images/resources/brand-1-2.png')}}" alt="">
                 </div><!-- /.swiper-slide -->
                 <div class="swiper-slide">
-                    <img src="assets/images/resources/brand-1-1.png" alt="">
+                    <img src="{{asset('site/en/assets/images/resources/brand-1-1.png')}}" alt="">
                 </div><!-- /.swiper-slide -->
                 <div class="swiper-slide">
-                    <img src="assets/images/resources/brand-1-1.png" alt="">
+                    <img src="{{asset('site/en/assets/images/resources/brand-1-2.png')}}" alt="">
+                </div><!-- /.swiper-slide -->                  <div class="swiper-slide">
+                    <img src="{{asset('site/en/assets/images/resources/brand-1-1.png')}}" alt="">
                 </div><!-- /.swiper-slide -->
                 <div class="swiper-slide">
-                    <img src="assets/images/resources/brand-1-1.png" alt="">
+                    <img src="{{asset('site/en/assets/images/resources/brand-1-2.png')}}" alt="">
+                </div><!-- /.swiper-slide -->                  <div class="swiper-slide">
+                    <img src="{{asset('site/en/assets/images/resources/brand-1-1.png')}}" alt="">
                 </div><!-- /.swiper-slide -->
                 <div class="swiper-slide">
-                    <img src="assets/images/resources/brand-1-1.png" alt="">
+                    <img src="{{asset('site/en/assets/images/resources/brand-1-2.png')}}" alt="">
                 </div><!-- /.swiper-slide -->
-                <div class="swiper-slide">
-                    <img src="assets/images/resources/brand-1-1.png" alt="">
-                </div><!-- /.swiper-slide -->
-                <div class="swiper-slide">
-                    <img src="assets/images/resources/brand-1-1.png" alt="">
-                </div><!-- /.swiper-slide -->
-                <div class="swiper-slide">
-                    <img src="assets/images/resources/brand-1-1.png" alt="">
-                </div><!-- /.swiper-slide -->
-                <div class="swiper-slide">
-                    <img src="assets/images/resources/brand-1-1.png" alt="">
-                </div><!-- /.swiper-slide -->
-                <div class="swiper-slide">
-                    <img src="assets/images/resources/brand-1-1.png" alt="">
-                </div><!-- /.swiper-slide -->
-                <div class="swiper-slide">
-                    <img src="assets/images/resources/brand-1-1.png" alt="">
-                </div><!-- /.swiper-slide -->
-                <div class="swiper-slide">
-                    <img src="assets/images/resources/brand-1-1.png" alt="">
-                </div><!-- /.swiper-slide -->
-                <div class="swiper-slide">
-                    <img src="assets/images/resources/brand-1-1.png" alt="">
-                </div><!-- /.swiper-slide -->
-                <div class="swiper-slide">
-                    <img src="assets/images/resources/brand-1-1.png" alt="">
-                </div><!-- /.swiper-slide -->
-                <div class="swiper-slide">
-                    <img src="assets/images/resources/brand-1-1.png" alt="">
-                </div><!-- /.swiper-slide -->
+
+
+            </div><!-- /.swiper-slide -->
             </div><!-- /.swiper-wrapper -->
         </div><!-- /.thm-swiper__slider -->
     </div><!-- /.container -->
 </div><!-- /.client-carousel -->
 
-<section class="team-one">
-    <img src="assets/images/icons/team-bg-1-1.png" alt="" class="team-one__bg">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 col-lg-12 col-xl-5">
-                <div class="team-one__content">
-                    <div class="block-title">
-                        <div class="block-title__image"></div><!-- /.block-title__image -->
-                        <p>meet the team</p>
-                        <h3>Expert Farmers</h3>
-                    </div><!-- /.block-title -->
-                    <div class="team-one__summery">
-                        <p>Lorem ipsum is simply free text available. Aenean eu leo quam. Pellentesque ornare sem
-                            lacinia quam venenatis vestibulum. Aenean lacinia bibendum.</p>
-                    </div><!-- /.team-one__summery -->
-
-                    <!-- If we need navigation buttons -->
-                    <div class="team-one__nav">
-                        <div class="swiper-button-prev" id="team-one__swiper-button-next"><i class="agrikon-icon-left-arrow"></i>
-                        </div>
-                        <div class="swiper-button-next" id="team-one__swiper-button-prev"><i class="agrikon-icon-right-arrow"></i></div>
-                    </div><!-- /.team-one__nav -->
-
-                </div><!-- /.team-one__content -->
-            </div><!-- /.col-md-12 col-lg-5 -->
-        </div><!-- /.row -->
-    </div><!-- /.container -->
-    <div class="team-one__carousel-wrap">
-        <div class="thm-swiper__slider swiper-container" data-swiper-options='{"spaceBetween": 0, "slidesPerView": 1, "slidesPerGroup": 1, "autoplay": { "delay": 5000 }, "navigation": {
-    "nextEl": "#team-one__swiper-button-next",
-    "prevEl": "#team-one__swiper-button-prev"
-},"breakpoints": {
-    "0": {
-        "spaceBetween": 0,
-        "slidesPerView": 1,
-        "slidesPerGroup": 1
-    },
-    "640": {
-        "spaceBetween": 30,
-        "slidesPerView": 2,
-        "slidesPerGroup": 2
-    },
-    "992": {
-        "spaceBetween": 30,
-        "slidesPerView": 3,
-        "slidesPerGroup": 3
-    },
-    "1200": {
-        "spaceBetween": 30,
-        "slidesPerView": 3,
-        "slidesPerGroup": 3
-    }
-}}'>
-
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="team-card">
-                        <div class="team-card__image">
-                            <img src="assets/images/team/team-1-1.jpg" alt="Jessica Brown">
-                            <div class="team-card__social">
-                                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                            </div><!-- /.team-card__social -->
-                        </div><!-- /.team-card__image -->
-                        <h3>Jessica Brown</h3>
-                        <p>Farmer</p>
-                    </div><!-- /.team-card -->
-                </div><!-- /.swiper-slide -->
-                <div class="swiper-slide">
-                    <div class="team-card">
-                        <div class="team-card__image">
-                            <img src="assets/images/team/team-1-2.jpg" alt="Jessica Brown">
-                            <div class="team-card__social">
-                                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                            </div><!-- /.team-card__social -->
-                        </div><!-- /.team-card__image -->
-                        <h3>Jessica Brown</h3>
-                        <p>Farmer</p>
-                    </div><!-- /.team-card -->
-                </div><!-- /.swiper-slide -->
-                <div class="swiper-slide">
-                    <div class="team-card">
-                        <div class="team-card__image">
-                            <img src="assets/images/team/team-1-3.jpg" alt="Jessica Brown">
-                            <div class="team-card__social">
-                                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                            </div><!-- /.team-card__social -->
-                        </div><!-- /.team-card__image -->
-                        <h3>Jessica Brown</h3>
-                        <p>Farmer</p>
-                    </div><!-- /.team-card -->
-                </div><!-- /.swiper-slide -->
-                <div class="swiper-slide">
-                    <div class="team-card">
-                        <div class="team-card__image">
-                            <img src="assets/images/team/team-1-1.jpg" alt="Jessica Brown">
-                            <div class="team-card__social">
-                                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                            </div><!-- /.team-card__social -->
-                        </div><!-- /.team-card__image -->
-                        <h3>Jessica Brown</h3>
-                        <p>Farmer</p>
-                    </div><!-- /.team-card -->
-                </div><!-- /.swiper-slide -->
-                <div class="swiper-slide">
-                    <div class="team-card">
-                        <div class="team-card__image">
-                            <img src="assets/images/team/team-1-2.jpg" alt="Jessica Brown">
-                            <div class="team-card__social">
-                                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                            </div><!-- /.team-card__social -->
-                        </div><!-- /.team-card__image -->
-                        <h3>Jessica Brown</h3>
-                        <p>Farmer</p>
-                    </div><!-- /.team-card -->
-                </div><!-- /.swiper-slide -->
-                <div class="swiper-slide">
-                    <div class="team-card">
-                        <div class="team-card__image">
-                            <img src="assets/images/team/team-1-3.jpg" alt="Jessica Brown">
-                            <div class="team-card__social">
-                                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                            </div><!-- /.team-card__social -->
-                        </div><!-- /.team-card__image -->
-                        <h3>Jessica Brown</h3>
-                        <p>Farmer</p>
-                    </div><!-- /.team-card -->
-                </div><!-- /.swiper-slide -->
-            </div><!-- /.swiper-wrapper -->
-
-        </div><!-- /.thm-swiper__slider -->
-    </div><!-- /.team-one__carousel-wrap -->
-</section><!-- /.team-one -->
 
 <section class="testimonials-one testimonials-one__about">
-    <img src="assets/images/icons/testimonials-bg-1-1.png" class="testimonials-one__bg" alt="">
+    <img src="{{asset('site/en/assets/images/icons/testimonials-bg-1-1.png')}}" class="testimonials-one__bg" alt="">
     <div class="container">
         <h2 class="testimonials-one__title">Testimonials</h2>
         <div id="testimonials-one__carousel" class="testimonials-one__carousel swiper-container">
@@ -321,17 +188,17 @@
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <div class="testimonials-one__image">
-                        <img src="assets/images/resources/testimonials-1-1.jpg" alt="">
+                        <img src="{{asset('site/en/assets/images/resources/testimonials-1-1.jpg')}}" alt="">
                     </div><!-- /.testimonials-one__image -->
                 </div><!-- /.swiper-slide -->
                 <div class="swiper-slide">
                     <div class="testimonials-one__image">
-                        <img src="assets/images/resources/testimonials-1-2.jpg" alt="">
+                        <img src="{{asset('site/en/assets/images/resources/testimonials-1-1.jpg')}}" alt="">
                     </div><!-- /.testimonials-one__image -->
                 </div><!-- /.swiper-slide -->
                 <div class="swiper-slide">
                     <div class="testimonials-one__image">
-                        <img src="assets/images/resources/testimonials-1-3.jpg" alt="">
+                        <img src="{{asset('site/en/assets/images/resources/testimonials-1-1.jpg')}}" alt="">
                     </div><!-- /.testimonials-one__image -->
                 </div><!-- /.swiper-slide -->
             </div><!-- /.swiper-wrapper -->
@@ -363,53 +230,6 @@
     </div><!-- /.container -->
 </section><!-- /.testimonials-one -->
 
-<section class="about-three">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6">
-                <div class="about-three__image">
-                    <img src="assets/images/resources/about-3-2.jpg" alt="">
-                </div><!-- /.about-three__image -->
-            </div><!-- /.col-lg-6 -->
-            <div class="col-lg-6">
-                <div class="about-three__content">
-                    <div class="block-title">
-                        <div class="block-title__image"></div><!-- /.block-title__image -->
-                        <p>Get to know us</p>
-                        <h3>30 Years Agriculture
-                            Experience</h3>
-                    </div><!-- /.block-title -->
-                    <ul class="about-three__list list-unstyled">
-                        <li>
-                            <i class="fa fa-check-circle"></i>
-                            Suspe ndisse suscipit sagittis
-                        </li>
-                        <li>
-                            <i class="fa fa-check-circle"></i>
-                            If you are going to a passage
-                        </li>
-                        <li>
-                            <i class="fa fa-check-circle"></i>
-                            Entum estibulum dignissim
-                        </li>
-                        <li>
-                            <i class="fa fa-check-circle"></i>
-                            Entum estibulum dignissim
-                        </li>
-                    </ul><!-- /.about-three__list list-unstyled -->
-                    <div class="about-three__summery">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed deiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Donec scelerisque dolor id nunc dictum, interdum. </p>
-                    </div><!-- /.about-three__summery -->
-                    <div class="about-three__signs">
-                        <img src="assets/images/resources/about-3-1.png" alt="">
-                        <img src="assets/images/resources/sign-1-1.png" alt="">
-                    </div><!-- /.about-three__signs -->
-                </div><!-- /.about-three__content -->
-            </div><!-- /.col-lg-6 -->
-        </div><!-- /.row -->
-    </div><!-- /.container -->
-</section><!-- /.about-three -->
 
 
 <section class="call-to-action jarallax" data-jarallax data-speed="0.3" data-imgPosition="-80% 50%">

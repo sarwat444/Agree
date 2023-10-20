@@ -6,10 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> SUSTAINABLE UNION TRADING </title>
     <!-- favicons Icons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="{{asset('site/en/assets/images/favicons/apple-touch-icon.png')}} ">
-    <link rel="icon" type="image/png" sizes="32x32" href="{{asset('site/en/assets/images/favicons/favicon-32x32.png')}} ">
-    <link rel="icon" type="image/png" sizes="16x16" href="{{asset('site/en/assets/images/favicons/favicon-16x16.png')}} ">
-    <link rel="manifest" href="{{asset('site/en/assets/images/favicons/site.webmanifest')}}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{asset('site/en/assets/images/loader.png')}} ">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{asset('site/en/assets/images/loader.png')}} ">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{asset('site/en/assets/images/loader.png')}} ">
     <meta name="description" content=" SUSTAINABLE UNION TRADING ">
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -36,16 +35,17 @@
             {
     @endphp
 
-
     @php
         }
     @endphp
     @stack('styles')
 </head>
 <body>
+<!--
 <div class="preloader">
     <img class="preloader__image" width="55" src="{{asset('site/en/assets/images/loader.png')}}" alt="">
-</div><!-- /.preloader -->
+</div>
+-->
 <div class="page-wrapper">
     @include('site.includes.header')
     @yield('content')
@@ -56,9 +56,6 @@
     if(app()->getLocale() == 'en')
     {
 @endphp
-
-
-
 <script src="{{asset(ASSET_URL.'site/en/assets/js/jquery-3.5.1.min.js')}}"></script>
 <script src="{{asset(ASSET_URL.'site/en/assets/js/bootstrap.bundle.min.js')}}"></script>
 <script src="{{asset(ASSET_URL.'site/en/assets/js/swiper.min.js')}} "></script>

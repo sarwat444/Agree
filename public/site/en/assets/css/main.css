@@ -4099,9 +4099,6 @@ h6 {
   }
 }
 
-.client-carousel__has-border-top {
-  border-top: 1px solid #e9e7e2;
-}
 
 .client-carousel__has-top-shadow {
   -webkit-box-shadow: 0px -1px 0px 0px RGBA(227, 227, 227, 0.004);
@@ -4123,13 +4120,9 @@ h6 {
 .client-carousel img {
   -webkit-transition: 500ms;
   transition: 500ms;
-  opacity: 0.3;
   max-width: 100%;
 }
 
-.client-carousel img:hover {
-  opacity: 0.8;
-}
 
 .client-carousel__about-page {
   position: relative;
@@ -6007,14 +6000,14 @@ h6 {
 
 @media (min-width: 768px) {
   .call-to-action__three-content h3 {
-    font-size: 50px;
+    font-size: 36px;
   }
 }
 
 @media (min-width: 1200px) {
   .call-to-action__three-content h3 {
     max-width: 553px;
-    font-size: 60px;
+    font-size: 36px;
   }
 }
 
@@ -6357,7 +6350,6 @@ h6 {
 
 @media (min-width: 1200px) {
   .service-two__card-content h3 {
-    max-width: 145px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -7328,19 +7320,18 @@ h6 {
 
 .about-three {
   padding-top: 96px;
-  padding-bottom: 80px;
   position: relative;
 }
 
 @media (min-width: 992px) {
   .about-three {
     padding-top: 120px;
-    padding-bottom: 120px;
+
   }
 }
 
 .about-three__image {
-  margin-bottom: 50px;
+
 }
 
 @media (min-width: 992px) {
@@ -7716,14 +7707,13 @@ h6 {
 .testimonials-one {
   background-color: #1f4e3d;
   position: relative;
-  padding-top: 70px;
-  padding-bottom: 140px;
+  padding-top: 30px;
 }
 
 @media (min-width: 992px) {
   .testimonials-one {
-    padding-top: 110px;
-    padding-bottom: 325px;
+    padding-top: 30px;
+      padding-bottom: 30px;
   }
 }
 
@@ -7733,7 +7723,6 @@ h6 {
 
 @media (min-width: 992px) {
   .testimonials-one__about {
-    padding-bottom: 120px;
   }
 }
 
@@ -8461,5 +8450,26 @@ h6 {
     padding-bottom: 160px;
     text-align: center;
     padding-bottom: 50px;
+}
+.brands img
+{
+    transform: scale(1.3);
+}
+.call-to-action__three
+{
+    padding-top: 40px;
+}
+.call-to-action__three-content h3
+{
+    margin-bottom: 10px;
+}
+.call-to-action__three-content p{
+    margin-bottom: 30px;
+    color: #fff;
+}
+.service-two__card-content
+{
+    padding-left: 14px ;
+    padding-right: 14px ;
 }
 /*# sourceMappingURL=main.css.map */

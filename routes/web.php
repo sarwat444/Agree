@@ -50,6 +50,8 @@ Route::group(['prefix' => 'admins/dashboard', 'as' => 'dashboard.'], function ()
     Route::get('/' , [DashboardController::class , 'home'])->name('index') ;
     Route::get('/tawzef_model' , [NamozagsController::class , 'tawzef_model'])->name('tawzef_model') ;
     Route::get('/Consultant_model' , [NamozagsController::class , 'Consultant_model'])->name('Consultant_model') ;
+    Route::get('/ServicesRequest_model' , [NamozagsController::class , 'ServicesRequest_model'])->name('ServicesRequest_model') ;
+    Route::get('/sgap_model' , [NamozagsController::class , 'sgap_model'])->name('sgap_model') ;
 
 });
 
