@@ -10,11 +10,11 @@
         <!-- /.page-header__bg -->
         <div class="container">
             <ul class="thm-breadcrumb list-unstyled">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">{{ __('home.Home') }}</a></li>
                 <li>/</li>
-                <li><span>Consultant registration form</span></li>
+                <li><span>{{ __('home.Consultant registration form') }} </span></li>
             </ul><!-- /.thm-breadcrumb list-unstyled -->
-            <h2>Consultant registration form</h2>
+            <h2>{{ __('home.Consultant registration form') }} </h2>
         </div><!-- /.container -->
     </section><!-- /.page-header -->
     <section class="Tawzef_model mt-50 mb-50">
@@ -32,29 +32,29 @@
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label>Name</label>
-                                <input name="name" type="text" class="form-control" placeholder="Name" required>
+                                <label>{{ __('home.Name') }}  </label>
+                                <input name="name" type="text" class="form-control" placeholder="{{ __('home.Name') }}" required>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label>Email</label>
-                                <input name="email" type="email" class="form-control" placeholder="Email" required>
+                                <label>{{ __('home.Email') }} </label>
+                                <input name="email" type="email" class="form-control" placeholder="{{ __('home.Email') }}" required>
                             </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label>Phone</label>
-                                <input name="phone" type="text" class="form-control" placeholder="Phone" required>
+                                <label>{{ __('home.Phone') }}</label>
+                                <input name="phone" type="text" class="form-control" placeholder=" {{ __('home.Phone') }}" required>
                             </div>
                         </div>
 
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label>Years of Experience on Agricultural sector </label>
-                                <input name="experience_years" type="text" class="form-control" placeholder="Years of Experience" required>
+                                <label>{{ __('home.Years of Experience on Agricultural sector') }}  </label>
+                                <input name="experience_years" type="text" class="form-control" placeholder="{{ __('home.Years of Experience on Agricultural sector') }}" required>
                             </div>
                         </div>
                     </div>
@@ -62,14 +62,14 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label>Years of Experience On general </label>
-                                    <input name="experience_years_public" type="text" class="form-control" placeholder="Years of Experience On general" required>
+                                    <label>{{ __('home.Years of Experience On general') }}  </label>
+                                    <input name="experience_years_public" type="text" class="form-control" placeholder="{{ __('home.Years of Experience On general') }}" required>
                                 </div>
                             </div>
 
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label>Experience Field </label><br>
+                                    <label>{{ __('home.Experience Field') }}  </label><br>
                                     <select class="form-control" name="experience_filed">
 
                                         <option selected >Select ... </option>
@@ -83,7 +83,7 @@
                         <div class="row">
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label>Qulififcation</label>
+                                <label>{{ __('home.Qulififcation') }} </label>
                                 <select class="form-control" name="quilifaction">
                                     <option selected >Select ... </option>
                                     @foreach($Quilifactions as $qulification)
@@ -94,12 +94,12 @@
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label>File</label>
+                                <label>{{ __('home.File') }} </label>
                                 <input type="file" name="file" class="form-control"  required>
                             </div>
                         </div>
                     </div>
-                    <button class="btn btn-primary thm-btn"  type="submit" name="submit"> Save </button>
+                    <button class="btn btn-primary thm-btn submit_button"  type="submit" name="submit"> {{ __('home.Save') }} </button>
                 </div>
             </div>
         </form>

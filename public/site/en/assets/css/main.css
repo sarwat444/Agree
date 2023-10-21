@@ -1817,7 +1817,7 @@
 }
 
 body {
-  font-family: var(--thm-font);
+  font-family: var(--thm-font) !important;
   color: var(--thm-color);
   font-size: 16px;
   line-height: 2.125;
@@ -4015,7 +4015,7 @@ h6 {
   line-height: 1;
   font-family: var(--special-font);
   color: #fff;
-  font-size: 70px;
+  font-size: 51px;
   font-weight: 700;
   margin-top: 30px;
 }
@@ -6187,7 +6187,7 @@ h6 {
 
 .service-two {
   background-color: #f6f5f2;
-  padding-top: 80px;
+  padding-top: 30px;
   padding-bottom: 60px;
   position: relative;
 }
@@ -8473,3 +8473,21 @@ h6 {
     padding-right: 14px ;
 }
 /*# sourceMappingURL=main.css.map */
+.service-two
+{
+padding-top: 25px;
+}
+.main-slider .swiper-slide h2 {
+    font-size: 35px;
+    line-height: 51px;
+    margin-bottom: 35px;
+}
+.main-slider .swiper-slide .container {
+    padding-top: 92.5px;
+    padding-bottom: 182.5px;
+    text-align: right;
+}
+.about-three
+{
+    padding-top: 70px;
+}

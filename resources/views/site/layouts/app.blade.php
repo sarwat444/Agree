@@ -17,24 +17,40 @@
         if(app()->getLocale() == 'en')
             {
     @endphp
-    <link rel="stylesheet" href="{{asset(ASSET_URL.'site/en/assets/css/bootstrap.min.css')}}">
-    <link rel="stylesheet" href="{{asset(ASSET_URL.'site/en/assets/css/fontawesome-all.min.css')}}">
-    <link rel="stylesheet" href="{{asset(ASSET_URL.'site/en/assets/css/swiper.min.css')}}">
-    <link rel="stylesheet" href="{{asset(ASSET_URL.'site/en/assets/css/animate.min.css')}} ">
-    <link rel="stylesheet" href="{{asset(ASSET_URL.'site/en/assets/css/odometer.min.css')}}">
-    <link rel="stylesheet" href="{{asset(ASSET_URL.'site/en/assets/css/jarallax.css')}}">
-    <link rel="stylesheet" href="{{asset(ASSET_URL.'site/en/assets/css/magnific-popup.css')}}">
-    <link rel="stylesheet" href="{{asset(ASSET_URL.'site/en/assets/css/bootstrap-select.min.css')}}">
-    <link rel="stylesheet" href="{{asset(ASSET_URL.'site/en/assets/css/agrikon-icons.css')}}">
-    <link rel="stylesheet" href="{{asset(ASSET_URL.'site/en/assets/css/nouislider.min.css')}}">
-    <link rel="stylesheet" href="{{asset(ASSET_URL.'site/en/assets/css/nouislider.pips.css')}} ">
-    <!-- template styles -->
-    <link rel="stylesheet" href="{{asset(ASSET_URL.'site/en/assets/css/main.css')}}">
+        <link rel="stylesheet" href="{{asset(ASSET_URL.'site/en/assets/css/bootstrap.min.css')}}">
+        <link rel="stylesheet" href="{{asset(ASSET_URL.'site/en/assets/css/fontawesome-all.min.css')}}">
+        <link rel="stylesheet" href="{{asset(ASSET_URL.'site/en/assets/css/swiper.min.css')}}">
+        <link rel="stylesheet" href="{{asset(ASSET_URL.'site/en/assets/css/animate.min.css')}} ">
+        <link rel="stylesheet" href="{{asset(ASSET_URL.'site/en/assets/css/odometer.min.css')}}">
+        <link rel="stylesheet" href="{{asset(ASSET_URL.'site/en/assets/css/jarallax.css')}}">
+        <link rel="stylesheet" href="{{asset(ASSET_URL.'site/en/assets/css/magnific-popup.css')}}">
+        <link rel="stylesheet" href="{{asset(ASSET_URL.'site/en/assets/css/bootstrap-select.min.css')}}">
+        <link rel="stylesheet" href="{{asset(ASSET_URL.'site/en/assets/css/agrikon-icons.css')}}">
+        <link rel="stylesheet" href="{{asset(ASSET_URL.'site/en/assets/css/nouislider.min.css')}}">
+        <link rel="stylesheet" href="{{asset(ASSET_URL.'site/en/assets/css/nouislider.pips.css')}} ">
+        <!-- template styles -->
+        <link rel="stylesheet" href="{{asset(ASSET_URL.'site/en/assets/css/main.css')}}">
     @php
         }else
             {
-    @endphp
-
+      @endphp
+        <link rel="stylesheet" href="{{asset(ASSET_URL.'site/en/assets/css/bootstrap.min.css')}}">
+        <link rel="stylesheet" href="{{asset(ASSET_URL.'site/en/assets/css/fontawesome-all.min.css')}}">
+        <link rel="stylesheet" href="{{asset(ASSET_URL.'site/en/assets/css/swiper.min.css')}}">
+        <link rel="stylesheet" href="{{asset(ASSET_URL.'site/en/assets/css/animate.min.css')}} ">
+        <link rel="stylesheet" href="{{asset(ASSET_URL.'site/en/assets/css/odometer.min.css')}}">
+        <link rel="stylesheet" href="{{asset(ASSET_URL.'site/en/assets/css/jarallax.css')}}">
+        <link rel="stylesheet" href="{{asset(ASSET_URL.'site/en/assets/css/magnific-popup.css')}}">
+        <link rel="stylesheet" href="{{asset(ASSET_URL.'site/en/assets/css/bootstrap-select.min.css')}}">
+        <link rel="stylesheet" href="{{asset(ASSET_URL.'site/en/assets/css/agrikon-icons.css')}}">
+        <link rel="stylesheet" href="{{asset(ASSET_URL.'site/en/assets/css/nouislider.min.css')}}">
+        <link rel="stylesheet" href="{{asset(ASSET_URL.'site/en/assets/css/nouislider.pips.css')}} ">
+        <!-- template styles -->
+        <link rel="stylesheet" href="{{asset(ASSET_URL.'site/en/assets/css/main.css')}}">
+        <link rel="stylesheet" href="{{asset(ASSET_URL.'site/ar/assets/css/ar.css')}}">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@500&display=swap" rel="stylesheet">
     @php
         }
     @endphp
@@ -52,10 +68,7 @@
     @include('site.includes.footer')
 </div>
 
-@php
-    if(app()->getLocale() == 'en')
-    {
-@endphp
+
 <script src="{{asset(ASSET_URL.'site/en/assets/js/jquery-3.5.1.min.js')}}"></script>
 <script src="{{asset(ASSET_URL.'site/en/assets/js/bootstrap.bundle.min.js')}}"></script>
 <script src="{{asset(ASSET_URL.'site/en/assets/js/swiper.min.js')}} "></script>
@@ -72,14 +85,6 @@
 <script src="{{asset(ASSET_URL.'site/en/assets/js/nouislider.min.js')}}"></script>
 <!-- template js -->
 <script src="{{asset(ASSET_URL.'site/en/assets/js/theme.js')}}"></script>
-@php
-    }else
-        {
-@endphp
-
-@php
-    }
-@endphp
 @stack('scripts')
 </body>
 </html>

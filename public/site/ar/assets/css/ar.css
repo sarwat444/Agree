@@ -1,64 +1,115 @@
-body ,
-html
+body , html
+{
+    direction:rtl ;
+    font-family: 'Cairo', sans-serif !important;
+    overflow-x: hidden;
+}
+.home_link
+{
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.footer-widget{
+    text-align: right;
+}
+.main-menu .main-menu__list > li > a, .stricky-header .main-menu__list > li > a
 {
     font-family: 'Cairo', sans-serif !important;
 }
-.owl2-carousel
+h1, h2, h3, h4, h5, h6
 {
-    direction: ltr;
+    font-family: 'Cairo', sans-serif !important;
 }
-.languages-block, .currencies-block
+
+.service-one__box-content h3
 {
-    /* border-left: 1px solid #d2d2d2; */
-    /* border-right: 1px solid #d2d2d2; */
-    /* z-index: 10; */
-    /* position: relative; */
-    vertical-align: top;
-    margin-top: 12px;
-    border: 0 ;
-/* margin: 0; */
-/* display: inline-block;*/
+    font-weight: 500 !important;
 }
-.whatsapp_icon {
-    color: #56cb5b;
-    font-size: 17px;
-    margin-right: 4px;
-    margin-left: 8px;
-}
-.languages-block img
+.about-one__tagline p
 {
-    margin-left: 5px ;
+    font-family: 'Cairo', sans-serif !important;
 }
-.custom_menu .icone {
-    float: right;
-    margin-left: 13px;
-    margin-top: 8px;
-}
-.breadcrumb li:after
+.about-one__count ,
+.block-title__image
 {
-    content: "";
-    background: #fff;
-    border-left: 1px solid #e1e1e1;
-    border-top: 1px solid #e1e1e1;
-    display: inline-block;
-    height: 17px;
-    width: 16px;
-    position: absolute;
-    left: -8px;
-    top: 2px;
-    z-index: 1;
-    transform: rotate(-45deg);
+display: none;
 }
-.recentily_supplers .product-item-container h4
-{
-text-align: right;
-}
-.recentily_supplers .product-item-container .rating-box
-{
-    margin: 0 ;
-    text-align: left;
-}
-.product-layout .caption
+.about-one__content
 {
     text-align: right;
+}
+.about-one__content .block-title{
+
+    text-align: right !important;
+}
+.call-to-action__three-content
+{
+    text-align: right;
+}
+.about-three__content
+{
+    text-align: right;
+}
+.about-three__list
+{
+    flex-direction: column;
+}
+.goal ,
+.target
+{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 13px;
+}
+.about-three__list
+{
+    padding: 0 ;
+}
+.call-to-action h3{
+    text-align: right;
+    font-size: 28px;
+    margin-right: 27px;
+    line-height: 48px;
+}
+.contact-one__content
+{
+    text-align: right;
+}
+@media (min-width: 1200px)
+{
+.about-one__content {
+    margin-top: 60px;
+    margin-right: 30px;
+    padding-right: 120px;
+    padding-top: 100px;
+    padding-bottom: 0;
+    padding-left: 0;
+}
+}
+
+@media (min-width: 1200px)
+{
+.about-one__tagline p {
+    font-size: 20px;
+}
+}
+.call-to-action__two h3
+{
+    font-size: 35px;
+}
+.footer-widget__links ,
+.footer-widget__post
+{
+    margin: 0 ;
+    padding: 0 ;
+}
+.form-group
+{
+    text-align: right;
+}
+
+.submit_button
+{
+    float: right;
 }

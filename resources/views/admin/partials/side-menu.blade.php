@@ -15,11 +15,17 @@
                         <span key="t-ecommerce"> Namozags </span>
                     </a>
                     <ul class="sub-menu" aria-expanded="false">
-                        <li><a href="{{route('dashboard.tawzef_model')}}" key="t-products"> Tawzef Model</a></li>
-                        <li><a href="{{route('dashboard.Consultant_model')}}" key="t-products"> Consultant registration form</a></li>
-                        <li><a href="{{route('dashboard.sgap_model')}}" key="t-products"> Agricultural inspector registration S-GAP</a></li>
-                        <li><a href="{{route('dashboard.ServicesRequest_model')}}" key="t-products"> Service Requests Model</a></li>
+                        <li><a href="{{route('dashboard.tawzef_model')}}" key="t-products"> Tawzef Model </a></li>
+                        <li><a href="{{route('dashboard.Consultant_model')}}" key="t-products"> Consultant registration form </a></li>
+                        <li><a href="{{route('dashboard.sgap_model')}}" key="t-products"> Agricultural inspector registration S-GAP </a></li>
+                        <li><a href="{{route('dashboard.ServicesRequest_model')}}" key="t-products"> Service Requests Model </a></li>
                     </ul>
+                </li>
+                <li>
+                    <a href="{{route('dashboard.messages')}}">
+                        <i class="bx bx-comment"></i>
+                        <span key="t-maps">Messages </span>
+                    </a>
                 </li>
             </ul>
         </div>

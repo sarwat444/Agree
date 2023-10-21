@@ -2,10 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\{ConsultantModel, ExperienceField, Qualification, TawzefModel , ServiceRequestModel};
+use App\Models\{ConsultantModel, ExperienceField, Qualification, TawzefModel , ServiceRequestModel ,Contact};
 use App\Models\SGAP ;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\Storage;
+
 use Illuminate\Http\Request;
 
 
@@ -244,6 +245,29 @@ class HomeController extends Controller
             }
             // Save the Twawzef model to the database
             $service->save();
+            // Return a success response
+            return redirect()->back()->with('success' , 'Data Is Saved Successfuly') ;
+        }
+        public function save_contact(Request  $request)
+        {
+            $validator = Validator::make($request->all() , [
+                'name' => 'required' ,
+                'email'=>'required' ,
+                'phone' =>'required' ,
+                'message' => 'required'
+            ]);
+            if ($validator->fails()) {
+                return response()->json([
+                    'error' => $validator->errors()->first()
+                ], 400);
+            }
+            $contact = new contact();
+            $contact->name = $request->input('name');
+            $contact->email = $request->input('email');
+            $contact->phone = $request->input('phone');
+            $contact->message = $request->input('message');
+            $contact->subject = $request->input('subject');
+            $contact->save();
             // Return a success response
             return redirect()->back()->with('success' , 'Data Is Saved Successfuly') ;
         }

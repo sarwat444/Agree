@@ -7,11 +7,11 @@
         <!-- /.page-header__bg -->
         <div class="container">
             <ul class="thm-breadcrumb list-unstyled">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">{{ __('home.Home') }}</a></li>
                 <li>/</li>
-                <li><span>About</span></li>
+                <li><span>{{ __('home.About Us') }} </span></li>
             </ul><!-- /.thm-breadcrumb list-unstyled -->
-            <h2>About Us</h2>
+            <h2>{{ __('home.About Us') }}  </h2>
         </div><!-- /.container -->
     </section>
     <section class="about-three">
@@ -26,38 +26,48 @@
                     <div class="about-three__content">
                         <div class="block-title">
                             <div class="block-title__image"></div><!-- /.block-title__image -->
-                            <p>Get to know us</p>
-                            <h3>Sustainable Union Trading (SUT)</h3>
+                            <p>{{ __('home.Get to know us') }} </p>
+                            <h3>{{ __('home.Sustainable Union Trading (SUT)') }} </h3>
                         </div><!-- /.block-title -->
                         <ul class="about-three__list list-unstyled">
                             <li>
                                 <i class="fa fa-check-circle"></i>
-                                Agricultural technologies
-                            </li>
-                            <li>
-                                <i class="fa fa-check-circle"></i>
-                                Developing  administrative work
+                                {{ __('home.Agricultural technologies') }}
 
                             </li>
                             <li>
                                 <i class="fa fa-check-circle"></i>
-                                 Management and technical consulting
+                                {{ __('home.Developing administrative work') }}
+
 
                             </li>
                             <li>
                                 <i class="fa fa-check-circle"></i>
-                                Project management and operation
+                                {{ __('home.Management and technical consulting') }}
+
+
+                            </li>
+                            <li>
+                                <i class="fa fa-check-circle"></i>
+                                {{ __('home.Project management and operation') }}
+
                             </li>
                         </ul><!-- /.about-three__list list-unstyled -->
                         <div class="about-three__summery">
                             <p>
-                                Sustainable Union (SUT) was established through an alliance of expertise in
-                                the agricultural sector with the aim of growing this sector and making it
-                                keep pace with modern technologies in the world of agricultural production
-                                and management. <br>
+                                {{ __('home.Sustainable Union (SUT) was established through an alliance of expertise in the agricultural sector with the aim of growing this sector and making it keep pace with modern technologies in the world of agricultural production and management.') }}
 
-                                Our goal is to make this sector more automated, modern way
-                                Our vision is an agricultural world with added value that makes it a more attractive reality </p>
+                               <h3 class="goal"> {{ __('home.Our goal')}} </h3>
+
+                                {{ __('home.Is to make this sector more automated, modern way')}}
+
+
+                               <h3 class="target">{{ __('home.Our vision')}}</h3>
+
+                                {{ __('home.Is an agricultural world with added value that makes it a more attractive reality')}}
+
+
+                            </p>
                         </div><!-- /.about-three__summery -->
 
                     </div><!-- /.about-three__content -->
@@ -142,7 +152,7 @@
 <section class="testimonials-one testimonials-one__about">
     <img src="{{asset('site/en/assets/images/icons/testimonials-bg-1-1.png')}}" class="testimonials-one__bg" alt="">
     <div class="container">
-        <h2 class="testimonials-one__title">Testimonials</h2>
+        <h2 class="testimonials-one__title">{{ __('home.Testimonials') }}</h2>
         <div id="testimonials-one__carousel" class="testimonials-one__carousel swiper-container">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
@@ -153,7 +163,9 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div><!-- /.testimonials-one__icons -->
-                    <p>This is due to their excellent service, competitive pricing and customer support. It’s throughly
+                    <p>
+
+                        This is due to their excellent service, competitive pricing and customer support. It’s throughly
                         refresing to get such a personal touch. Duis aute lorem ipsum is simply free text irure dolor in
                         reprehenderit in esse nulla pariatur.</p>
                 </div><!-- /.swiper-slide -->
@@ -240,11 +252,10 @@
     <div class="container">
         <div class="call-to-action__content">
             <i class="call-to-action__icon agrikon-icon-agriculture-2"></i>
-            <h3>We’re popular leader in agriculture
-                market globally</h3>
+            <h3>{{ __('home.Is an agricultural world with added value that makes it a more attractive reality') }}</h3>
         </div><!-- /.call-to-action__content -->
         <div class="call-to-action__button">
-            <a href="services.html" class="thm-btn">Discover More</a><!-- /.thm-btn -->
+            <a href="services.html" class="thm-btn">{{ __('home.Discover More') }} </a><!-- /.thm-btn -->
         </div><!-- /.call-to-action__button -->
     </div><!-- /.container -->
 </section><!-- /.call-to-action -->

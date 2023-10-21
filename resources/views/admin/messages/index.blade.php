@@ -8,7 +8,6 @@
     <link
         href="{{asset(ASSET_URL_PUBLIC.'/assets/admin/libs/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css')}}"
         rel="stylesheet" type="text/css"/>
-        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/buttons/2.4.2/css/buttons.dataTables.min.css">
 
 @endpush
 @section('content')
@@ -20,27 +19,26 @@
                         <thead>
                         <tr>
                             <th>#</th>
-                            <th>Title</th>
-                            <th>Phone</th>
-                            <th>Email</th>
-                            <th>Note</th>
+                            <th>name</th>
+                            <th>email</th>
+                            <th>phone</th>
+                            <th>subject</th>
+                            <th>message</th>
                             <th>Created</th>
+
                         </tr>
                         </thead>
                         <tbody>
-                        @forelse($services_requests as $service)
+                        @forelse($messages as $message)
+
                             <tr>
                                 <td>{{ $loop->iteration }}</td>
-                                <td class="center">{{ $service->name }}</td>
-                                <td class="center">{{ $service->phone }}</td>
-                                <td class="center">{{ $service->email }}</td>
-                                @if(!empty($service->note))
-                                <td class="center">{{ $service->note }}</td>
-                                 @else
-                                    <td class="text-center text-danger"> No Notes</td>
-
-                                @endif
-                                <td class="center">{{ $service->created_at }}</td>
+                                <td class="center">{{ $message->name }}</td>
+                                <td class="center">{{ $message->email }}</td>
+                                <td class="center">{{ $message->phone }}</td>
+                                <td class="center">{{ $message->subject }}</td>
+                                <td class="center">{{ $message->message }}</td>
+                                <td class="center">{{ $message->created_at }}</td>
                             </tr>
                         @empty
                             <tr>
@@ -61,22 +59,9 @@
     <script src="{{asset(ASSET_URL_PUBLIC.'/assets/admin/libs/datatables.net-bs4/js/dataTables.bootstrap4.min.js')}}"></script>
     <script src="{{asset(ASSET_URL_PUBLIC.'/assets/admin/libs/datatables.net-responsive/js/dataTables.responsive.min.js')}}"></script>
     <script src="{{asset(ASSET_URL_PUBLIC.'/assets/admin/libs/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js')}}"></script>
-    <!-- DataTables Buttons -->
-
-    <script src="https://cdn.datatables.net/buttons/2.4.2/js/dataTables.buttons.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
-    <script src="https://cdn.datatables.net/buttons/2.4.2/js/buttons.html5.min.js"></script>
-    <script src="https://cdn.datatables.net/buttons/2.4.2/js/buttons.print.min.js"></script>
     <script>
-            $(document).ready(function (){
-                $('#datatable').dataTable({
-                    dom: 'Bfrtip',
-                buttons: [
-                    'copy', 'csv', 'excel', 'pdf', 'print'
-                ]
-                }) ;
-            })
+        $(document).ready(function (){
+            $('#datatable').dataTable() ;
+        })
     </script>
 @endpush

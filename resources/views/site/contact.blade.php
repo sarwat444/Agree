@@ -10,13 +10,12 @@
                 <div class="contact-one__content">
                     <div class="block-title">
                         <div class="block-title__image"></div><!-- /.block-title__image -->
-                        <p>Contact now</p>
-                        <h3>Leave A Message</h3>
+                        <p>{{ __('home.Contact now') }}</p>
+                        <h3>{{ __('home.Leave A Message') }} </h3>
                     </div><!-- /.block-title -->
+
                     <div class="contact-one__summery">
-                        <p>Lorem ipsum dolor sit amet, consectetur notted adipisicing elit sed do eiusmod tempor
-                            incididunt ut labore et dolore magna aliqua lonm andhn. Aenean tincidunt id mauris id
-                            auctor. Donec at ligula lacus dignissim mi quis simply neque.</p>
+                        <p>{{ __('home.We Are So  Happy  To Help You') }}</p>
                     </div><!-- /.contact-one__summery -->
                     <div class="contact-one__social">
                         <a href="#"><i class="fab fa-facebook-square"></i></a>
@@ -26,25 +25,32 @@
                 </div><!-- /.contact-one__content -->
             </div><!-- /.col-sm-12 -->
             <div class="col-sm-12 col-md-12 col-lg-6 col-xl-8">
-                <form action="assets/inc/sendemail.php" class="contact-one__form contact-form-validated">
+         @if(session()->has('success'))
+                <div class="alert alert-success">{{session('success')}}</div>
+            @endif
+            @if(session()->has('error'))
+                <div class="alert alert-danger">{{session('error')}}</div>
+            @endif
+                <form action="{{ route('site.save_contact') }}" method="post" class="contact-one__form ">
+                    @csrf
                     <div class="row">
                         <div class="col-lg-6">
-                            <input type="text" name="name" placeholder="Full Name">
+                            <input type="text" name="name" placeholder="{{ __('home.Full Name') }}">
                         </div><!-- /.col-lg-6 -->
                         <div class="col-lg-6">
-                            <input type="text" name="email" placeholder="Email Address">
+                            <input type="text" name="email" placeholder="{{ __('home.Email Address') }} ">
                         </div><!-- /.col-lg-6 -->
                         <div class="col-lg-6">
-                            <input type="text" name="phone" placeholder="Phone Number">
+                            <input type="text" name="phone" placeholder="{{ __('home.Phone Number') }}">
                         </div><!-- /.col-lg-6 -->
                         <div class="col-lg-6">
-                            <input type="text" name="subject" placeholder="Subject">
+                            <input type="text" name="subject" placeholder="{{ __('home.Subject') }}">
                         </div><!-- /.col-lg-6 -->
                         <div class="col-lg-12">
-                            <textarea name="message" placeholder="Write Message"></textarea>
+                            <textarea name="message" placeholder="{{ __('home.Write Message') }}"></textarea>
                         </div><!-- /.col-lg-12 -->
                         <div class="col-lg-12">
-                            <button type="submit" class="thm-btn">Send a Message</button><!-- /.thm-btn -->
+                            <button type="submit" class="thm-btn"0>{{ __('home.Send a Message') }} </button><!-- /.thm-btn -->
                         </div><!-- /.col-lg-12 -->
                     </div><!-- /.row -->
                 </form>
@@ -59,19 +65,19 @@
             <div class="row no-gutters">
                 <div class="col-sm-12 col-md-12 col-lg-4">
                     <div class="contact-infos__single">
-                        <h3>About Company</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit nulla sit amet lectus neque.</p>
+                        <h3>{{ __('home.About Company') }}</h3>
+                        <p>{{ __('home.Sustainable Union (SUT) was established through an alliance of expertise in the agricultural sector') }}</p>
                     </div><!-- /.contact-infos__single -->
                 </div><!-- /.col-sm-12 col-md-12 col-lg-4 -->
                 <div class="col-sm-12 col-md-12 col-lg-4">
                     <div class="contact-infos__single">
-                        <h3>Visit Company</h3>
+                        <h3>{{ __('home.Visit Company') }}</h3>
                         <p>66 broklyn golden street line, New York. United States of America.</p>
                     </div><!-- /.contact-infos__single -->
                 </div><!-- /.col-sm-12 col-md-12 col-lg-4 -->
                 <div class="col-sm-12 col-md-12 col-lg-4">
                     <div class="contact-infos__single">
-                        <h3>Call or Email</h3>
+                        <h3>{{ __('home.Call or Email') }}</h3>
                         <p><a href="mailto:needhelp@company.com">needhelp@company.com</a> <br>
                             <a href="mailto:info@company.com">info@company.com</a><br>
                             <a href="tel:666-888-0000">666 888 0000</a>

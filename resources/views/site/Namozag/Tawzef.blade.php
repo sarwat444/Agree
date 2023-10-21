@@ -10,11 +10,11 @@
         <!-- /.page-header__bg -->
         <div class="container">
             <ul class="thm-breadcrumb list-unstyled">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">{{ __('home.Home') }}</a></li>
                 <li>/</li>
-                <li><span>Twaezef Model</span></li>
+                <li><span>{{ __('home.Twaezef Model') }}</span></li>
             </ul><!-- /.thm-breadcrumb list-unstyled -->
-            <h2>Twaezef Model</h2>
+            <h2>{{ __('home.Twaezef Model') }}</h2>
         </div><!-- /.container -->
     </section><!-- /.page-header -->
     <section class="Tawzef_model mt-50 mb-50">
@@ -32,36 +32,36 @@
                                <div class="row">
                                    <div class="col-md-6">
                                        <div class="form-group">
-                                           <label>Name</label>
-                                           <input name="name" type="text" class="form-control" placeholder="Name" required>
+                                           <label>{{ __('home.Name') }}</label>
+                                           <input name="name" type="text" class="form-control" placeholder="{{ __('home.Name') }}" required>
                                        </div>
                                    </div>
                                    <div class="col-md-6">
                                        <div class="form-group">
-                                           <label>Email</label>
-                                           <input name="email" type="email" class="form-control" placeholder="Email" required>
-                                       </div>
-                                   </div>
-                               </div>
-                               <div class="row">
-                                   <div class="col-md-6">
-                                       <div class="form-group">
-                                           <label>Phone</label>
-                                           <input name="phone" type="text" class="form-control" placeholder="Phone" required>
-                                       </div>
-                                   </div>
-                                   <div class="col-md-6">
-                                       <div class="form-group">
-                                           <label>Sex</label><br>
-                                           <input type="radio" name="sex" value="0"  id="male" checked> <label for="male">Male</label>
-                                           <input type="radio" name="sex" value="1" id="Famle">  <label for="Famle">Female</label>
+                                           <label>{{ __('home.Email') }}</label>
+                                           <input name="email" type="email" class="form-control" placeholder="{{ __('home.Email') }}" required>
                                        </div>
                                    </div>
                                </div>
                                <div class="row">
                                    <div class="col-md-6">
                                        <div class="form-group">
-                                           <label>Qulififcation</label>
+                                           <label>{{ __('home.Phone') }}</label>
+                                           <input name="phone" type="text" class="form-control" placeholder="{{ __('home.Phone') }}" required>
+                                       </div>
+                                   </div>
+                                   <div class="col-md-6">
+                                       <div class="form-group">
+                                           <label>{{ __('home.Sex') }}</label><br>
+                                           <input type="radio" name="sex" value="0"  id="male" checked> <label for="male">{{ __('home.Male') }} </label>
+                                           <input type="radio" name="sex" value="1" id="Famle">  <label for="Famle">{{ __('home.Female') }} </label>
+                                       </div>
+                                   </div>
+                               </div>
+                               <div class="row">
+                                   <div class="col-md-6">
+                                       <div class="form-group">
+                                           <label>{{ __('home.Qulififcation') }}</label>
                                            <select class="form-control" name="quilifaction">
                                                <option selected >Select ... </option>
                                                @foreach($Quilifactions as $qulification)
@@ -72,12 +72,12 @@
                                    </div>
                                    <div class="col-md-6">
                                        <div class="form-group">
-                                           <label>File</label>
+                                           <label>{{ __('home.File') }} </label>
                                            <input type="file" name="file" class="form-control"  required>
                                        </div>
                                    </div>
                                </div>
-                               <button class="btn btn-primary thm-btn"  type="submit" name="submit"> Save </button>
+                               <button class="btn btn-primary thm-btn submit_button"  type="submit" name="submit">{{ __('home.Save') }} </button>
                            </div>
                     </div>
             </form>

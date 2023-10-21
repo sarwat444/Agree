@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers\admin;
 use App\Http\Controllers\Controller;
-use App\Models\ConsultantModel;
+use App\Models\{ConsultantModel ,Contact };
 use App\Models\SGAP;
 use App\Models\TawzefModel;
 use App\Models\ServiceRequestModel ;
@@ -31,4 +31,12 @@ class NamozagsController extends Controller
         return view('admin.namozags.sgap_models')->with(compact('sgap_models')) ;
 
     }
+    public  function messages()
+    {
+        $messages  = contact::get() ;
+        return view('admin.messages.index')->with(compact('messages')) ;
+    }
+
+
+
 }

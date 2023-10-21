@@ -10,11 +10,11 @@
         <!-- /.page-header__bg -->
         <div class="container">
             <ul class="thm-breadcrumb list-unstyled">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">{{ __('home.Home') }}</a></li>
                 <li>/</li>
-                <li><span> Service Request Model</span></li>
+                <li><span> {{ __('home.Service Request Model') }} </span></li>
             </ul><!-- /.thm-breadcrumb list-unstyled -->
-            <h2> Service Request Model</h2>
+            <h2> {{ __('home.Service Request Model') }}</h2>
         </div><!-- /.container -->
     </section><!-- /.page-header -->
     <section class="Tawzef_model mt-50 mb-50">
@@ -32,7 +32,7 @@
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label for="type">Type</label>
+                                <label for="type">{{ __('home.Type') }} </label>
                                 <select id="type" class="form-control" name="type">
                                     <option value="Dimitra Tech">Dimitra Tech </option>
                                     <option value="Sammi Glory">Sammi Glory</option>
@@ -44,8 +44,8 @@
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label for="name">Name</label>
-                                <input id="name" name="name" type="text" class="form-control" placeholder="Name" required>
+                                <label for="name">{{ __('home.Name') }}</label>
+                                <input id="name" name="name" type="text" class="form-control" placeholder="{{ __('home.Name')}}" required>
                             </div>
                         </div>
 
@@ -53,25 +53,25 @@
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label for="phone">Phone</label>
-                                <input id="phone" name="phone" type="text" class="form-control" placeholder="Phone" required>
+                                <label for="phone">{{ __('home.Phone')}} </label>
+                                <input id="phone" name="phone" type="text" class="form-control" placeholder="{{ __('home.Phone')}}" required>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label for="email">Email</label>
-                                <input id="email" name="email" type="email" class="form-control" placeholder="Email" required>
+                                <label for="email">{{ __('home.Email')}} </label>
+                                <input id="email" name="email" type="email" class="form-control" placeholder="{{ __('home.Email')}}" required>
                             </div>
                         </div>
 
                     </div>
                     <div class="row mb-3 d-none" id="notes">
                         <div class="col-md-12">
-                            <label for="notes">Notes</label>
-                            <textarea id="notes" class="form-control" placeholder="Add Notes"  name="notes"></textarea>
+                            <label for="notes">{{ __('home.Notes')}} </label>
+                            <textarea id="notes" class="form-control" placeholder=">{{ __('home.Notes')}}"  name="notes"></textarea>
                         </div>
                     </div>
-                    <button class="btn btn-primary thm-btn"  type="submit" name="submit"> Save </button>
+                    <button class="btn btn-primary thm-btn submit_button"  type="submit" name="submit">{{ __('home.Save')}}  </button>
                 </div>
             </div>
         </form>

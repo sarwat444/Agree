@@ -6,14 +6,9 @@
             <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4">
                 <div class="footer-widget">
                     <a href="index.html" class="footer-widget__Logo">
-                        <img src="{{asset('site/en/assets/images/logo-light.png')}} " width="153" alt="">
+                        <img src="{{asset('site/en/assets/images/logo-light.png')}} " width="250" alt="">
                     </a>
-                    <p>There are many variations of passages of lorem ipsum available, but the majority suffered.
-                    </p>
-                    <form action="#" data-url="YOUR_MAILCHIMP_URL" class="mc-form">
-                        <input type="email" name="EMAIL" placeholder="Email Address">
-                        <button type="submit"><i class="agrikon-icon-right-arrow"></i></button>
-                    </form><!-- /.mc-form -->
+                    <p class="mb-5">{{ __('home.Sustainable Union (SUT) was established through an alliance of expertise in the agricultural sector') }} </p>
                     <div class="mc-form__response"></div><!-- /.mc-form__response -->
                     <div class="footer__social">
                         <a href="#" class="fab fa-facebook-square"></a>
@@ -25,19 +20,27 @@
             </div><!-- /.col-sm-12 col-md-6 col-lg-4 -->
             <div class="col-sm-12 col-md-6 col-lg-6 col-xl-2">
                 <div class="footer-widget footer-widget__links-widget">
-                    <h3 class="footer-widget__title">Links</h3><!-- /.footer-widget__title -->
+                    <h3 class="footer-widget__title">{{ __('home.Links') }}</h3><!-- /.footer-widget__title -->
                     <ul class="list-unstyled footer-widget__links">
-                        <li><a href="#">Our Projects</a></li>
-                        <li><a href="#">About us</a></li>
-                        <li><a href="#">New Campaign</a></li>
-                        <li><a href="#">Upcoming Events</a></li>
-                        <li><a href="#">Volunteers</a></li>
+                        <li>
+                            <a href="{{route('site.home')}}">{{ __('home.Home') }}</a>
+
+                        </li>
+                        <li>
+                            <a href="{{route('site.about')}}">{{ __('home.About Us') }}</a>
+                        </li>
+                        <li>
+                            <a href="{{route('site.Serives')}}">{{ __('home.Serives') }} </a>
+                        </li>
+                        <li>
+                            <a href="{{route('site.contact')}}">{{ __('home.Contact Us') }} </a>
+                        </li>
                     </ul><!-- /.list-unstyled -->
                 </div><!-- /.footer-widget -->
             </div><!-- /.col-sm-12 col-md-6 col-lg-2 -->
             <div class="col-sm-12 col-md-6 col-lg-6 col-xl-3">
                 <div class="footer-widget">
-                    <h3 class="footer-widget__title">News</h3><!-- /.footer-widget__title -->
+                    <h3 class="footer-widget__title">{{ __('home.News') }}</h3><!-- /.footer-widget__title -->
                     <ul class="list-unstyled footer-widget__post">
                         <li>
                             <img src="{{asset('site/en/assets/images/resources/footer-post-1.png')}}" alt="">
@@ -57,7 +60,7 @@
                 </div><!-- /.footer-widget -->
             </div><!-- /.col-sm-12 col-md-6 col-lg-3 -->
             <div class="col-sm-12 col-md-6 col-lg-6 col-xl-3">
-                <h3 class="footer-widget__title">Contact</h3><!-- /.footer-widget__title -->
+                <h3 class="footer-widget__title">{{ __('home.Contact') }}</h3><!-- /.footer-widget__title -->
                 <ul class="list-unstyled footer-widget__contact">
                     <li>
                         <i class="agrikon-icon-telephone"></i>
@@ -79,12 +82,7 @@
 </footer><!-- /.site-footer -->
 <div class="bottom-footer">
     <div class="container">
-        <p>© Copyright 2020 by Company.com</p>
-        <div class="bottom-footer__links">
-            <a href="#">Terms & Conditions</a>
-            <a href="#">Privacy Policy</a>
-            <a href="#">Sitemap</a>
-        </div><!-- /.bottom-footer__links -->
+        <p> {{ __('home.© Copyright 2020 by Sustainable Union (SUT)') }} </p>
     </div><!-- /.container -->
 </div><!-- /.bottom-footer -->
 
