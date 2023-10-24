@@ -20,11 +20,11 @@
                         <thead>
                         <tr>
                             <th>#</th>
-                            <th>Title</th>
-                            <th>Phone</th>
-                            <th>Email</th>
-                            <th>Note</th>
-                            <th>Created</th>
+                            <th>{{__('home.Title')}}</th>
+                            <th>{{__('home.Phone')}} </th>
+                            <th>{{__('home.Email')}} </th>
+                            <th>{{__('home.Note')}}</th>
+                            <th>{{__('home.Created')}}</th>
                         </tr>
                         </thead>
                         <tbody>
@@ -37,7 +37,7 @@
                                 @if(!empty($service->note))
                                 <td class="center">{{ $service->note }}</td>
                                  @else
-                                    <td class="text-center text-danger"> No Notes</td>
+                                    <td class="text-center text-danger"> {{__('home.No Notes')}}</td>
 
                                 @endif
                                 <td class="center">{{ $service->created_at }}</td>

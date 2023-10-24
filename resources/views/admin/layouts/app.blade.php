@@ -9,7 +9,12 @@
     <!-- App favicon -->
     <!-- Bootstrap Css -->
     {{-- id="bootstrap-style" --}}
-    <link href="{{asset(ASSET_URL_PUBLIC.'/assets/admin/css/bootstrap.min.css')}}"  rel="stylesheet" type="text/css" />
+    @if(app()->getLocale() == 'ar')
+        <link href="{{asset(ASSET_URL_PUBLIC.'/assets/admin/css/bootstrap-rtl.min.css')}}"  rel="stylesheet" type="text/css" />
+        @else
+        <link href="{{asset(ASSET_URL_PUBLIC.'/assets/admin/css/bootstrap.min.css')}}"  rel="stylesheet" type="text/css" />
+    @endif
+
     <!-- Icons Css -->
     <link href="{{asset(ASSET_URL_PUBLIC.'/assets/admin/css/icons.min.css')}}" rel="stylesheet" type="text/css" />
     <!-- App Css-->
@@ -19,6 +24,29 @@
     <link href="{{asset(ASSET_URL_PUBLIC.'/assets/admin/css/pace.css')}}" rel="stylesheet" type="text/css" />
     <link href="{{asset(ASSET_URL_PUBLIC.'/assets/admin/css/custom-responsive.css')}}" rel="stylesheet" type="text/css" />
     <meta name="csrf-token" content="{{ csrf_token() }}">
+    @if(app()->getLocale() == 'ar')
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"  rel="stylesheet">
+        <link href="{{asset(ASSET_URL_PUBLIC.'/assets/admin/css/app-rtl.min.css')}}" rel="stylesheet" type="text/css" />
+        <style>
+            body
+            {
+                direction: rtl;
+                font-family: 'Cairo', sans-serif !important;
+            }
+            html
+            {
+                font-family: 'Cairo', sans-serif !important;
+            }
+            .main-content
+            {
+                margin-left: 0;
+            }
+            body[data-sidebar=dark] .navbar-brand-box {
+                background: #002187;
+            }
+        </style>
+    @endif
     @stack('styles')
 </head>
 

@@ -19,15 +19,15 @@
                         <thead>
                         <tr>
                             <th>#</th>
-                            <th>Title</th>
-                            <th>Phone</th>
-                            <th>Email</th>
-                            <th>Quilifaction</th>
-                            <th>Experience.Y.C</th>
-                            <th>Experience.Y.C Agreculture F</th>
-                            <th>Agreculture Fileds </th>
-                            <th>Attachments: CV</th>
-                            <th>Created</th>
+                            <th>{{__('home.Title')}}</th>
+                            <th>{{__('home.Phone')}} </th>
+                            <th>{{__('home.Email')}} </th>
+                            <th>{{__('home.Quilifaction')}} </th>
+                            <th>{{__('home.Experience.Y.C')}}</th>
+                            <th>{{__('home.Experience.Y.C Agreculture F')}}</th>
+                            <th>{{__('home.Agreculture Fileds')}}</th>
+                            <th>{{__('home.Attachments: CV')}}</th>
+                            <th>{{__('home.Created')}}</th>
                         </tr>
                         </thead>
                         <tbody>
@@ -44,7 +44,7 @@
                                 <td class="center">{{ $t_model->experience_years_public }}</td>
                                 <td class="center">{{ $t_model->experience_years }}</td>
                                 <td class="center">{{ $t_model->experience->title }}</td>
-                                <td><a href="{{asset(ASSET_URL_PUBLIC.$t_model->file)}}" class="btn btn-primary">View Attachments</a></td>
+                                <td><a href="{{asset(ASSET_URL_PUBLIC.$t_model->file)}}" class="btn btn-primary">{{__('home.View Attachments')}}</a></td>
                                 <td class="center">{{ $t_model->created_at }}</td>
                             </tr>
                         @empty

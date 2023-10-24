@@ -20,13 +20,13 @@
                         <thead>
                         <tr>
                             <th>#</th>
-                            <th>Title</th>
-                            <th>Phone</th>
-                            <th>Email</th>
-                            <th>Quilifaction</th>
-                            <th>Sex</th>
-                            <th>Attachments: CV</th>
-                            <th>Created</th>
+                            <th>{{__('home.Title')}}</th>
+                            <th>{{__('home.Phone')}} </th>
+                            <th>{{__('home.Email')}} </th>
+                            <th>{{__('home.Quilifaction')}} </th>
+                            <th>{{__('home.Sex')}} </th>
+                            <th>{{__('home.Attachments: CV')}}</th>
+                            <th>{{__('home.Created')}}</th>
                         </tr>
                         </thead>
                         <tbody>
@@ -37,8 +37,8 @@
                                 <td class="center">{{ $t_model->phone }}</td>
                                 <td class="center">{{ $t_model->email }}</td>
                                 <td class="center">{{ $t_model->quilifaction->title }}</td>
-                                <td class="center">@if($t_model->sex==1) <span class="badge badge-soft-success">male</span> @else <span class="badge badge-soft-primary">female</span> @endif</td>
-                                <td><a href="{{asset(ASSET_URL_PUBLIC.$t_model->file)}}" class="btn btn-primary">View Attachments</a></td>
+                                <td class="center">@if($t_model->sex==1) <span class="badge badge-soft-success">{{__('home.male')}}</span> @else <span class="badge badge-soft-primary">{{__('home.female')}}</span> @endif</td>
+                                <td><a href="{{asset(ASSET_URL_PUBLIC.$t_model->file)}}" class="btn btn-primary">{{__('home.View Attachments')}}</a></td>
                                 <td class="center">{{ $t_model->created_at }}</td>
                             </tr>
                         @empty

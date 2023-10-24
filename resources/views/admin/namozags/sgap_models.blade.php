@@ -20,14 +20,14 @@
                         <thead>
                         <tr>
                             <th>#</th>
-                            <th>Title</th>
-                            <th>Phone</th>
-                            <th>Email</th>
-                            <th>Have Certifacte</th>
-                            <th>Quilifaction</th>
-                            <th>Crtifcate</th>
-                            <th>S-GAP Certifacte</th>
-                            <th>Created</th>
+                            <th>{{__('home.Title')}}</th>
+                            <th>{{__('home.Phone')}} </th>
+                            <th>{{__('home.Email')}} </th>
+                            <th>{{__('home.Have Certifacte')}}</th>
+                            <th>{{__('home.Quilifaction')}} </th>
+                            <th>{{__('home.Attachments: CV')}}</th>
+                            <th>{{__('home.S-GAP Certifacte')}}</th>
+                            <th>{{__('home.Created')}}</th>
                         </tr>
                         </thead>
                         <tbody>
@@ -45,8 +45,12 @@
                                     @endif
                                 </td>
                                 <td class="center">{{ $t_model->quilifaction->title }}</td>
-                                <td><a href="{{asset(ASSET_URL_PUBLIC.$t_model->file)}}" class="btn btn-primary">View Attachments</a></td>
-                                <td><a href="{{asset(ASSET_URL_PUBLIC.$t_model->s_GAP_file)}}" class="btn btn-primary">View Attachments</a></td>
+                                <td><a href="{{asset(ASSET_URL_PUBLIC.$t_model->file)}}" class="btn btn-primary">{{__('home.View Attachments')}}</a></td>
+                                @if($t_model->have_certiface == 1 )
+                                    <td><a href="{{asset(ASSET_URL_PUBLIC.$t_model->s_GAP_file)}}" class="btn btn-primary">{{__('home.View Attachments')}}</a></td>
+                                @else
+                                    <td><p class="text-success badge badge-soft-danger">{{__('home.No Certifacte')}}  </p></td>
+                                @endif
                                 <td class="center">{{ $t_model->created_at }}</td>
                             </tr>
                         @empty

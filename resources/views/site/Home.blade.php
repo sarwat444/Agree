@@ -16,15 +16,15 @@
         "prevEl": "#main-slider__swiper-button-prev"
     }
 }'>
-            <div class="swiper-wrapper">
+            <div class="swiper-wrapper Top_slider">
                 <div class="swiper-slide">
                     <div class="image-layer" style="background-image: url({{asset('site/en/assets/images/main-slider/main-slider-1-1.jpg')}});">
                     </div>
                     <!-- /.image-layer -->
                     <div class="container">
                         <div class="row">
-                            <div class="col-xl-7 col-lg-7">
-                                <span class="tagline">{{ __('home.Welcome to Sustainable Union (SUT)') }} {{ __('home.The modern qualitative shift in the world of modifications in the world of agriculture') }}</span>
+                            <div class="col-xl-9 col-lg-9">
+                                <span class="tagline">{{ __('home.Welcome to Sustainable Union (SUT)') }}</span>
                                 <h2><span> {{ __('home.Modern technologies and business development in the world of agriculture are at your fingertips Be with us') }}</span> </h2>
                                 <a href="#" class=" thm-btn">{{ __('home.Discover More') }} </a>
                                 <!-- /.thm-btn dynamic-radius -->
@@ -58,38 +58,6 @@
 
         </div><!-- /.swiper-container thm-swiper__slider -->
     </section><!-- /.main-slider -->
-
-    <section class="service-one">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 col-lg-4 wow fadeInUp" data-wow-duration="1500ms">
-                    <div class="service-one__box">
-                        <img src="{{asset('site/en/assets/images/services/service-1-1.jpg')}}" alt="">
-                        <div class="service-one__box-content">
-                            <h3><a href="service-details.html">{{ __('home.Developing technical and administrative work') }}</a></h3>
-                        </div><!-- /.service-one__box-content -->
-                    </div><!-- /.service-one__box -->
-                </div><!-- /.col-md-12 col-lg-4 -->
-                <div class="col-md-12 col-lg-4 wow fadeInUp" data-wow-duration="1500ms">
-                    <div class="service-one__box">
-                        <img src="{{asset('site/en/assets/images/services/service-1-2.jpg')}}" alt="">
-                        <div class="service-one__box-content">
-                            <h3><a href="service-details.html">{{ __('home.Management and technical consulting') }} </a></h3>
-                        </div><!-- /.service-one__box-content -->
-                    </div><!-- /.service-one__box -->
-                </div><!-- /.col-md-12 col-lg-4 -->
-                <div class="col-md-12 col-lg-4 wow fadeInUp" data-wow-duration="1500ms">
-                    <div class="service-one__box">
-                        <img src="{{asset('site/en/assets/images/services/service-1-3.jpg')}}" alt="">
-                        <div class="service-one__box-content">
-                            <h3><a href="service-details.html">{{ __('home.Project management and operation') }}</a></h3>
-                        </div><!-- /.service-one__box-content -->
-                    </div><!-- /.service-one__box -->
-                </div><!-- /.col-md-12 col-lg-4 -->
-            </div><!-- /.row -->
-        </div><!-- /.container -->
-    </section><!-- /.service-one -->
-
     <section class="about-one">
         <img src="{{asset('site/en/assets/images/icons/about-bg-icon-1-1.png')}}" class="about-one__bg-shape-1" alt="">
         <div class="container">
@@ -117,8 +85,10 @@
                         </div><!-- /.about-one__tagline -->
                         <div class="about-one__summery">
                             <p> {{ __('home.with the aim of growing this sector and making it keep pace with modern technologies in the world of agricultural production and management.') }}</p>
+                            <p> {{ __('home.Our goal') }}  {{ __('home.Is to make this sector more automated, modern way') }}  </p>
+                            <p>{{ __('home.Our vision') }} {{ __('home.Is an agricultural world with added value that makes it a more attractive reality') }}   </p>
+
                         </div><!-- /.about-one__summery -->
-                        <a href="about.html" class="thm-btn"> {{ __('home.Discover More')}}</a><!-- /.thm-btn -->
                     </div><!-- /.about-one__content -->
                 </div><!-- /.col-lg-6 -->
             </div><!-- /.row -->
@@ -205,97 +175,6 @@
         </div><!-- /.container -->
     </section><!-- /.call-to-action__three -->
 
-    <section class="testimonials-one">
-        <img src="{{asset('site/en/assets/images/icons/testimonials-bg-1-1.png')}}" class="testimonials-one__bg" alt="">
-        <div class="container">
-            <h2 class="testimonials-one__title">Testimonials</h2>
-            <div id="testimonials-one__carousel" class="testimonials-one__carousel swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="testimonials-one__icons">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div><!-- /.testimonials-one__icons -->
-                        <p>This is due to their excellent service, competitive pricing and customer support. It’s throughly
-                            refresing to get such a personal touch. Duis aute lorem ipsum is simply free text irure dolor in
-                            reprehenderit in esse nulla pariatur.</p>
-                    </div><!-- /.swiper-slide -->
-                    <div class="swiper-slide">
-                        <div class="testimonials-one__icons">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div><!-- /.testimonials-one__icons -->
-                        <p>This is due to their excellent service, competitive pricing and customer support. It’s throughly
-                            refresing to get such a personal touch. Duis aute lorem ipsum is simply free text irure dolor in
-                            reprehenderit in esse nulla pariatur.</p>
-                    </div><!-- /.swiper-slide -->
-                    <div class="swiper-slide">
-                        <div class="testimonials-one__icons">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div><!-- /.testimonials-one__icons -->
-                        <p>This is due to their excellent service, competitive pricing and customer support. It’s throughly
-                            refresing to get such a personal touch. Duis aute lorem ipsum is simply free text irure dolor in
-                            reprehenderit in esse nulla pariatur.</p>
-                    </div><!-- /.swiper-slide -->
-                </div><!-- /.swiper-wrapper -->
-            </div><!-- /#testimonials-one__carousel -->
-
-            <div id="testimonials-one__thumb" class="swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="testimonials-one__image">
-                            <img src="{{asset('site/en/assets/images/resources/testimonials-1-1.jpg')}}" alt="">
-                        </div><!-- /.testimonials-one__image -->
-                    </div><!-- /.swiper-slide -->
-                    <div class="swiper-slide">
-                        <div class="testimonials-one__image">
-                            <img src="{{asset('site/en/assets/images/resources/testimonials-1-2.jpg')}}" alt="">
-                        </div><!-- /.testimonials-one__image -->
-                    </div><!-- /.swiper-slide -->
-                    <div class="swiper-slide">
-                        <div class="testimonials-one__image">
-                            <img src="{{asset('site/en/assets/images/resources/testimonials-1-2.jpg')}}" alt="">
-                        </div><!-- /.testimonials-one__image -->
-                    </div><!-- /.swiper-slide -->
-                </div><!-- /.swiper-wrapper -->
-            </div><!-- /#testimonials-one__thumb.swiper-container -->
-
-            <div id="testimonials-one__meta" class="testimonials-one__carousel swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="testimonials-one__meta">
-                            <h4>Jessica Brown</h4>
-                            <span>Customer</span>
-                        </div><!-- /.testimonials-one__meta -->
-                    </div><!-- /.swiper-slide -->
-                    <div class="swiper-slide">
-                        <div class="testimonials-one__meta">
-                            <h4>Caleb Hoffman</h4>
-                            <span>Customer</span>
-                        </div><!-- /.testimonials-one__meta -->
-                    </div><!-- /.swiper-slide -->
-                    <div class="swiper-slide">
-                        <div class="testimonials-one__meta">
-                            <h4>Bradley Kim</h4>
-                            <span>Customer</span>
-                        </div><!-- /.testimonials-one__meta -->
-                    </div><!-- /.swiper-slide -->
-                </div><!-- /.swiper-wrapper -->
-            </div><!-- /#testimonials-one__meta.swiper-container -->
-            <div class="swiper-pagination" id="testimonials-one__swiper-pagination"></div>
-        </div><!-- /.container -->
-    </section><!-- /.testimonials-one -->
-
     <div class="client-carousel client-carousel__has-border-top">
         <div class="container">
             <div class="thm-swiper__slider swiper-container" data-swiper-options='{"spaceBetween": 140, "slidesPerView": 5, "autoplay": { "delay": 5000 }, "breakpoints": {
@@ -368,5 +247,10 @@
     </div><!-- /.client-carousel -->
  @endsection
 @push('scripts')
+    <script>
+        $(document).ready(function (){
+            $('.Top_slider .swiper-wrapper').height( $(window).height()) ;
+        });
+    </script>
 @endpush
 

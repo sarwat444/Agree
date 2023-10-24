@@ -70,8 +70,7 @@ return [
      'Better Agriculture for Better Future' => 'تنميه زراعيه من أجل  مستقبل أفضل ' ,
       'Welcome to Sustainable Union (SUT)' => 'مرحبا بكم فى الأتحاد المستدام التجارى' ,
     'The modern qualitative shift in the world of modifications in the world of agriculture' => 'النقلة النوعية في عالم التقنيات الحديثة في عالم الزراعة' ,
-    'Modern technologies and business development in the world of agriculture are at your fingertips Be with us' =>'التقنيات الحديثة و تطوير الأعمال في عالم الزراعة بين يديك
-    كن معنا' ,
+    'Modern technologies and business development in the world of agriculture are at your fingertips Be with us' =>'التقنيات الحديثة و تطوير الأعمال في عالم الزراعة بين يديك' ,
 
 
    'Twaezef Model' => 'نموذج توظيف ' ,
@@ -95,6 +94,32 @@ return [
    'Service Request Model' => 'نموذج طلب خدمه ' ,
    'Notes' => 'ملاحظات' ,
    'Type' => 'نوع الخدمه ' ,
+    'Dashboard' => 'لوحه التحكم' ,
+    'Namozags' => 'النماذج' ,
+    'Tawzef Model' => 'نموذج توظيف'   ,
+    'Consultant registration form' => 'نموذج تسجيل  مستشار' ,
+    'Agricultural inspector registration S-GAP' => 'نموذج تسجيل مراقب  زراعى',
+    'Service Requests Model' => 'طلب خدمه' ,
+    'Messages' =>'الرسائل' ,
+    'Quilifaction' => 'المؤهلات'  ,
+    'Title' => 'الأسم'  ,
+    'Attachments: CV' => 'المرفقات'  ,
+    'Created' =>'تاريخ  الأنشاء' ,
+    'View Attachments' => 'عرض المرفقات' ,
+    'male' => 'ذكر' ,
+    'female' => 'أنثى' ,
+    'S-GAP Certifacte' => 'شهاده ال S-GAP' ,
+    'Crtifcate' => 'الشهاده' ,
+    'Have Certifacte' =>'لديه شهاده' ,
+    'Note' => 'ملاحظات' ,
+    'No Notes' => 'بدون ملاحظات' ,
+    'No Certifacte'  =>'بدون شهاده' ,
+    'Experience.Y.C' => 'عدد سنوات الخبره' ,
+    'Experience.Y.C Agreculture F' => 'عدد سنوات الخبره فى المجال  الزراعى',
+    'Agreculture Fileds' =>'مجال الخبره'
+
+
+
 
 
 
