@@ -116,7 +116,11 @@ return [
     'No Certifacte'  =>'بدون شهاده' ,
     'Experience.Y.C' => 'عدد سنوات الخبره' ,
     'Experience.Y.C Agreculture F' => 'عدد سنوات الخبره فى المجال  الزراعى',
-    'Agreculture Fileds' =>'مجال الخبره'
+    'Agreculture Fileds' =>'مجال الخبره' ,
+    'Agricultural and environmental studies and surveys' => 'الدراسات والمسح الزراعي والبيئي' ,
+    'SUT conducts a field survey of environmental and agricultural diseases and develops plans to combat them through a field work team and with the participation of our partners from the contracted companies' =>'تقوم الإتحاد المستدام بإجراء المسح الميداني للأمراض البيئية و الزراعية و وضع خطط مكافحتها عبر فريق عمل ميداني و بمشاركة شركائنا من الشركات المتعاقد معها'
+
+
 
 
 

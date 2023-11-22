@@ -25,11 +25,13 @@
                 <!-- /.main-menu__list -->
 
                 <div class="main-header__info">
+
                     <a href="{{route('site.join_us')}}" class="main-header__info-phone">
                         <span class="main-header__info-phone-content">
                                 <span class="main-header__info-phone-title">{{ __('home.Join Us Now') }}  </span>
                             </span><!-- /.main-header__info-phone-content -->
                     </a><!-- /.main-header__info-phone -->
+                    <span class="langs"><a href="{{url('/en')}}">en</a> /<a href="{{url('/ar')}}"> عربى</a> </span>
                 </div><!-- /.main-header__info -->
             </div><!-- /.container -->
         </nav>

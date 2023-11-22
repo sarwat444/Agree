@@ -19,7 +19,7 @@
             <div class="row">
                 <div class="col-lg-5">
                     <div class="about-three__image">
-                        <img src="{{asset('site/en/assets/images/resources/about-3-2.jpg')}}" alt="">
+                        <img src="{{asset('assets/images/ABOUTUS/ABOUT-US.png')}}" alt="">
                     </div><!-- /.about-three__image -->
                 </div><!-- /.col-lg-6 -->
                 <div class="col-lg-7">

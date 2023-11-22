@@ -18,7 +18,7 @@
 }'>
             <div class="swiper-wrapper Top_slider">
                 <div class="swiper-slide">
-                    <div class="image-layer" style="background-image: url({{asset('site/en/assets/images/main-slider/main-slider-1-1.jpg')}});">
+                    <div class="image-layer" style="background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgb(0 0 0 / 51%)), url({{asset('assets/images/SLIDER/SLIDER-1.png')}});">
                     </div>
                     <!-- /.image-layer -->
                     <div class="container">
@@ -33,7 +33,7 @@
                     </div><!-- /.container -->
                 </div><!-- /.swiper-slide -->
                 <div class="swiper-slide">
-                    <div class="image-layer" style="background-image: url({{asset('site/en/assets/images/main-slider/main-slider-1-2.jpg')}} );">
+                    <div class="image-layer" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url({{asset('assets/images/SLIDER/SLIDER-2.png')}} );">
                     </div>
                     <!-- /.image-layer -->
                     <div class="container">
@@ -47,6 +47,37 @@
                         </div><!-- /.row -->
                     </div><!-- /.container -->
                 </div><!-- /.swiper-slide -->
+                <div class="swiper-slide">
+                    <div class="image-layer" style="background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), linear-gradient(to bottom, rgba(0, 0, 0, 0.5), url({{asset('assets/images/SLIDER/SLIDER-3.png')}});">
+                    </div>
+                    <!-- /.image-layer -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-9 col-lg-9">
+                                <span class="tagline">{{ __('home.Welcome to Sustainable Union (SUT)') }}</span>
+                                <h2><span> {{ __('home.Modern technologies and business development in the world of agriculture are at your fingertips Be with us') }}</span> </h2>
+                                <a href="#" class=" thm-btn">{{ __('home.Discover More') }} </a>
+                                <!-- /.thm-btn dynamic-radius -->
+                            </div><!-- /.col-lg-7 text-right -->
+                        </div><!-- /.row -->
+                    </div><!-- /.container -->
+                </div><!-- /.swiper-slide -->
+                <div class="swiper-slide">
+                    <div class="image-layer" style="background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({{asset('assets/images/SLIDER/SLIDER-4.png')}} );">
+                    </div>
+                    <!-- /.image-layer -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-7 col-lg-7">
+                                <span class="tagline">{{ __('home.Welcome to Sustainable Union (SUT)') }} {{ __('home.The modern qualitative shift in the world of modifications in the world of agriculture') }}</span>
+                                <h2><span> {{ __('home.Modern technologies and business development in the world of agriculture are at your fingertips Be with us') }}</span> </h2>
+                                <a href="#" class=" thm-btn">{{ __('home.Discover More') }} </a>
+                                <!-- /.thm-btn dynamic-radius -->
+                            </div><!-- /.col-lg-7 text-right -->
+                        </div><!-- /.row -->
+                    </div><!-- /.container -->
+                </div><!-- /.swiper-slide -->
+
             </div><!-- /.swiper-wrapper -->
 
             <!-- If we need navigation buttons -->
@@ -58,14 +89,16 @@
 
         </div><!-- /.swiper-container thm-swiper__slider -->
     </section><!-- /.main-slider -->
+
+
     <section class="about-one">
         <img src="{{asset('site/en/assets/images/icons/about-bg-icon-1-1.png')}}" class="about-one__bg-shape-1" alt="">
         <div class="container">
             <div class="row">
                 <div class="col-lg-5">
                     <div class="about-one__images">
-                        <img src="{{asset('site/en/assets/images/resources/about-1-1.jpg')}}" alt="">
-                        <img src="{{asset('site/en/assets/images/resources/about-1-2.jpg')}}" alt="">
+                        <img src="{{asset('assets/images/ABOUTUS/ABOUT-US.png')}}" alt="">
+                        <img src="{{asset('assets/images/ABOUTUS/ABOUT-US-2.png')}}" alt="" style="height: 353px;">
                         <div class="about-one__count wow fadeInLeft" data-wow-duration="1500ms">
                             <span>Trusted by</span>
                             <h4>8900</h4>
@@ -104,10 +137,10 @@
                 <h3>{{ __('home.What We’re Offering') }}</h3>
             </div><!-- /.block-title -->
             <div class="row">
-                <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="col-sm-12 col-md-6 col-lg-3">
                     <div class="service-two__card">
                         <div class="service-two__card-image">
-                            <img src="{{asset('site/en/assets/images/services/service-2-1.jpg')}}" alt="">
+                            <img src="{{asset('assets/images/SERVICES/1.png')}}" alt="">
                         </div><!-- /.service-two__card-image -->
                         <div class="service-two__card-content">
                             <div class="service-two__card-icon">
@@ -118,10 +151,10 @@
                         </div><!-- /.service-two__card-content -->
                     </div><!-- /.service-two__card -->
                 </div><!-- /.col-sm-12 col-md-6 col-lg-3 -->
-                <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="col-sm-12 col-md-6 col-lg-3">
                     <div class="service-two__card">
                         <div class="service-two__card-image">
-                            <img src="{{asset('site/en/assets/images/services/service-2-2.jpg')}}" alt="">
+                            <img src="{{asset('assets/images/SERVICES/2.png')}}" alt="">
                         </div><!-- /.service-two__card-image -->
                         <div class="service-two__card-content">
                             <div class="service-two__card-icon">
@@ -132,10 +165,10 @@
                         </div><!-- /.service-two__card-content -->
                     </div><!-- /.service-two__card -->
                 </div><!-- /.col-sm-12 col-md-6 col-lg-3 -->
-                <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="col-sm-12 col-md-6 col-lg-3">
                     <div class="service-two__card">
                         <div class="service-two__card-image">
-                            <img src="{{asset('site/en/assets/images/services/service-2-3.jpg')}}" alt="">
+                            <img src="{{asset('assets/images/SERVICES/3.png')}}" alt="">
                         </div><!-- /.service-two__card-image -->
                         <div class="service-two__card-content">
                             <div class="service-two__card-icon">
@@ -147,10 +180,176 @@
                         </div><!-- /.service-two__card-content -->
                     </div><!-- /.service-two__card -->
                 </div><!-- /.col-sm-12 col-md-6 col-lg-3 -->
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <div class="service-two__card">
+                        <div class="service-two__card-image">
+                            <img src="{{asset('site/en/assets/images/services/service-2-3.jpg')}}" alt="">
+                        </div><!-- /.service-two__card-image -->
+                        <div class="service-two__card-content">
+                            <div class="service-two__card-icon">
+                                <i class="agrikon-icon-vegetable"></i>
+                            </div><!-- /.service-two__card-icon -->
+                            <h3><a href="service-details.html"> {{ __('home.Agricultural and environmental studies and surveys') }} </a></h3>
+                            <p>{{ __('home.SUT conducts a field survey of environmental and agricultural diseases and develops plans to combat them through a field work team and with the participation of our partners from the contracted companies') }}
+                            </p>
+                        </div><!-- /.service-two__card-content -->
+                    </div><!-- /.service-two__card -->
+                </div><!-- /.col-sm-12 col-md-6 col-lg-3 -->
 
             </div><!-- /.row -->
         </div><!-- /.container -->
     </section><!-- /.service-two -->
+
+    <section class="dimetra_kanda">
+        <div class="container">
+                <div class="blog-card__content">
+                    <h3 class="text-center"><a href="blog-details.html">Sustainable Union Company has contracted with several international companies as their representative and commercial agent in the Kingdom of Saudi Arabia</a></h3>
+                </div><!-- /.blog-card__content -->
+
+            <div class="row">
+                        <div class="col-lg-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="blog-details__content">
+                                        <h3>Dimitra Tech. ( Canada ) </h3>
+                                        <p>Increase Yield, Reduce Cost, Mitigate risk and financial inclusion
+                                            Which works to provide modern agricultural management techniques and solutions to develop the agricultural sector by increasing production rates and its sustainability. It uses satellites, drones, and field detection as tools with which the agricultural sector works and gives several added values in farm management and improves the quantitative and qualitative quality of production its most important services
+                                            - Comprehensive agricultural management
+                                            - Soil testing
+                                            - Checking the soil level
+                                            - Quality of fruit inspection
+                                            - Continuing agricultural marketing.
+
+                                            Our Product :
+                                            Connected Farmer
+                                            Connected Coffee
+                                            Connected Cacao
+                                            Livestock guru
+                                        </p>
+                                    </div><!-- /.blog-details__content -->
+                                </div>
+                            </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="card mb-5">
+                            <div class="card-body">
+                                <div class="blog-details__content">
+                                    <h3> SAMMI GLORY LTD. (South Korean) </h3>
+                                    <p>
+                                        It works in the manufacture of environmental
+                                        and agricultural spraying equipment and solutions
+                                        that provide pest control mechanisms.
+                                        It follows modern techniques
+                                        that save on the use of pesticides and spray technology that gives a quick effect
+                                        in control
+                                    </p>
+                                </div><!-- /.blog-details__content -->
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="blog-details__content">
+                                    <h3> Grow 4 Max Company (China) </h3>
+                                    <p>
+                                        Which works in the field of manufacturing specialized lighting that stimulates the growth of plants,
+                                        which accelerates the growth of the vegetative side with very high
+                                        quality in greenhouses and nurseries
+                                    </p>
+                                </div><!-- /.blog-details__content -->
+                            </div>
+                        </div>
+                    </div>
+
+            </div>
+        </div>
+    </section>
+    <div class="projects-one project-one__home-one">
+        <div class="container">
+            <div class="block-title text-center">
+                <div class="block-title__image"></div><!-- /.block-title__image -->
+                <p>Closed projects</p>
+                <h3>Latest Projects List</h3>
+            </div><!-- /.block-title -->
+            <div class="thm-swiper__slider swiper-container swiper-container-initialized swiper-container-horizontal" data-swiper-options="{&quot;spaceBetween&quot;: 0, &quot;slidesPerView&quot;: 1, &quot;loop&quot;: true, &quot;slidesPerGroup&quot;: 1, &quot;pagination&quot;: {
+            &quot;el&quot;: &quot;#projects-one__swiper-pagination&quot;,
+            &quot;type&quot;: &quot;bullets&quot;,
+            &quot;clickable&quot;: true
+        },
+        &quot;breakpoints&quot;: {
+            &quot;0&quot;: {
+                &quot;spaceBetween&quot;: 0,
+                &quot;slidesPerView&quot;: 1,
+                &quot;slidesPerGroup&quot;: 1
+            },
+            &quot;640&quot;: {
+                &quot;spaceBetween&quot;: 30,
+                &quot;slidesPerView&quot;: 2,
+                &quot;slidesPerGroup&quot;: 2
+            },
+            &quot;992&quot;: {
+                &quot;spaceBetween&quot;: 30,
+                &quot;slidesPerView&quot;: 2,
+                &quot;slidesPerGroup&quot;: 2
+            }
+        }}">
+                <div class="swiper-wrapper" style="transform: translate3d(-1200px, 0px, 0px); transition-duration: 0ms;"><div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="4" style="width: 570px; margin-right: 30px;">
+                        <div class="projects-one__single">
+                            <img src="{{asset('assets/images/PROJECTS/PROJECT-1.png')}}" alt="">
+                            <div class="projects-one__content">
+                                <h3>Harvest Innovation</h3>
+                                <a href="project-details.html" class="projects-one__button"><i class="agrikon-icon-right-arrow"></i></a><!-- /.projects-one__button -->
+                            </div><!-- /.projects-one__content -->
+                        </div><!-- /.projects-one__single -->
+                    </div><div class="swiper-slide swiper-slide-duplicate swiper-slide-prev" data-swiper-slide-index="5" style="width: 570px; margin-right: 30px;">
+                        <div class="projects-one__single">
+                            <img src="{{asset('assets/images/PROJECTS/PROJECT-2.png')}}" alt="">
+                            <div class="projects-one__content">
+                                <h3>Harvest Innovation</h3>
+                                <a href="project-details.html" class="projects-one__button"><i class="agrikon-icon-right-arrow"></i></a><!-- /.projects-one__button -->
+                            </div><!-- /.projects-one__content -->
+                        </div><!-- /.projects-one__single -->
+                    </div>
+                    <div class="swiper-slide swiper-slide-active" data-swiper-slide-index="0" style="width: 570px; margin-right: 30px;">
+                        <div class="projects-one__single">
+                            <img src="{{asset('assets/images/PROJECTS/PROJECT-3.png')}}" alt="">
+                            <div class="projects-one__content">
+                                <h3>Harvest Innovation</h3>
+                                <a href="project-details.html" class="projects-one__button"><i class="agrikon-icon-right-arrow"></i></a><!-- /.projects-one__button -->
+                            </div><!-- /.projects-one__content -->
+                        </div><!-- /.projects-one__single -->
+                    </div><!-- /.swiper-slide -->
+                    <div class="swiper-slide swiper-slide-next" data-swiper-slide-index="1" style="width: 570px; margin-right: 30px;">
+                        <div class="projects-one__single">
+                            <img src="{{asset('assets/images/PROJECTS/PROJECT-4.png')}}" alt="">
+                            <div class="projects-one__content">
+                                <h3>Harvest Innovation</h3>
+                                <a href="project-details.html" class="projects-one__button"><i class="agrikon-icon-right-arrow"></i></a><!-- /.projects-one__button -->
+                            </div><!-- /.projects-one__content -->
+                        </div><!-- /.projects-one__single -->
+                    </div><!-- /.swiper-slide -->
+                    <div class="swiper-slide" data-swiper-slide-index="2" style="width: 570px; margin-right: 30px;">
+                        <div class="projects-one__single">
+                            <img src="{{asset('assets/images/PROJECTS/PROJECT-4.png')}}" alt="">
+                            <div class="projects-one__content">
+                                <h3>Harvest Innovation</h3>
+                                <a href="project-details.html" class="projects-one__button"><i class="agrikon-icon-right-arrow"></i></a><!-- /.projects-one__button -->
+                            </div><!-- /.projects-one__content -->
+                        </div><!-- /.projects-one__single -->
+                    </div><!-- /.swiper-slide -->
+                        <div class="projects-one__single">
+                            <img src="assets/images/projects/project-2-2.jpg" alt="">
+                            <div class="projects-one__content">
+                                <h3>Harvest Innovation</h3>
+                                <a href="project-details.html" class="projects-one__button"><i class="agrikon-icon-right-arrow"></i></a><!-- /.projects-one__button -->
+                            </div><!-- /.projects-one__content -->
+                        </div><!-- /.projects-one__single -->
+                    </div></div><!-- /.swiper-wrapper -->
+                <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets" id="projects-one__swiper-pagination"><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 1"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span></div>
+                <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div><!-- /.swiper-container -->
+        </div><!-- /.container -->
+    </div>
+
 
     <section class="call-to-action__three jarallax" data-jarallax data-speed="0.3" data-imgPosition="50% 50%">
         <img class="call-to-action__three__bg jarallax-img" src="assets/images/backgrounds/cta-1-bg-1.jpg" alt="parallax-image" />
@@ -158,8 +357,7 @@
             <div class="row">
                 <div class="col-lg-5 wow fadeInLeft" data-wow-duration="1500ms">
                     <div class="call-to-action__three-image">
-                        <img src="{{asset('site/en/assets/images/resources/cta-3-1.jpg')}}" alt="">
-                        <img src="assets/images/resources/cta-3-2.jpg" alt="">
+                        <img src="{{asset('assets/images/OURGOAL/1.png')}}" alt="">
                     </div><!-- /.call-to-action__three-image -->
                 </div><!-- /.col-lg-5 -->
                 <div class="col-lg-7">

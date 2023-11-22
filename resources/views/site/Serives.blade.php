@@ -10,7 +10,7 @@
             <div class="col-sm-12 col-md-6 col-lg-4">
                 <div class="service-two__card">
                     <div class="service-two__card-image">
-                        <img src="{{asset('site/en/assets/images/services/service-2-1.jpg')}}" alt="">
+                        <img src="{{asset('assets/images/SERVICES/1.png')}}" alt="">
                     </div><!-- /.service-two__card-image -->
                     <div class="service-two__card-content">
                         <div class="service-two__card-icon">
@@ -24,7 +24,7 @@
             <div class="col-sm-12 col-md-6 col-lg-4">
                 <div class="service-two__card">
                     <div class="service-two__card-image">
-                        <img src="{{asset('site/en/assets/images/services/service-2-2.jpg')}}" alt="">
+                        <img src="{{asset('assets/images/SERVICES/2.png')}}" alt="">
                     </div><!-- /.service-two__card-image -->
                     <div class="service-two__card-content">
                         <div class="service-two__card-icon">
@@ -38,7 +38,7 @@
             <div class="col-sm-12 col-md-6 col-lg-4">
                 <div class="service-two__card">
                     <div class="service-two__card-image">
-                        <img src="{{asset('site/en/assets/images/services/service-2-3.jpg')}}" alt="">
+                        <img src="{{asset('assets/images/SERVICES/3.png')}}" alt="">
                     </div><!-- /.service-two__card-image -->
                     <div class="service-two__card-content">
                         <div class="service-two__card-icon">
@@ -82,7 +82,7 @@
             </div><!-- /.col-lg-6 -->
             <div class="col-lg-6">
                 <div class="feature-one__image">
-                    <img src="{{asset('site/en/assets/images/resources/feature-1-1.jpg')}}" alt="">
+                    <img src="{{asset('assets/images/OURGOAL/2.png')}}" alt="">
                 </div><!-- /.feature-one__image -->
             </div><!-- /.col-lg-6 -->
         </div><!-- /.row -->
