@@ -118,8 +118,32 @@ return [
     'Experience.Y.C Agreculture F' => 'عدد سنوات الخبره فى المجال  الزراعى',
     'Agreculture Fileds' =>'مجال الخبره' ,
     'Agricultural and environmental studies and surveys' => 'الدراسات والمسح الزراعي والبيئي' ,
-    'SUT conducts a field survey of environmental and agricultural diseases and develops plans to combat them through a field work team and with the participation of our partners from the contracted companies' =>'تقوم الإتحاد المستدام بإجراء المسح الميداني للأمراض البيئية و الزراعية و وضع خطط مكافحتها عبر فريق عمل ميداني و بمشاركة شركائنا من الشركات المتعاقد معها'
+    'SUT conducts a field survey of environmental and agricultural diseases and develops plans to combat them through a field work team and with the participation of our partners from the contracted companies' =>'تقوم الإتحاد المستدام بإجراء المسح الميداني للأمراض البيئية و الزراعية و وضع خطط مكافحتها عبر فريق عمل ميداني و بمشاركة شركائنا من الشركات المتعاقد معها' ,
+    'Sustainable Union Company has contracted with several international companies as their representative and commercial agent in the Kingdom of Saudi Arabia' =>'تعاقدت شركة الإتحاد المستدام مع عدة شركات عالمية كممثل ووكيل تجاري لها في المملكة العربية السعودية' ,
+    'Dimitra Tech. ( Canada )' => 'شركة Dimitra Tech  ( كندا )' ,
+    'dim_desc'=>'عوائد أكثر ، تقليل التكاليف و المخاطر و شمولة مالية
 
+والتي تعمل على توفير تقنيات حديثة للإدارة الزراعية وحلول لتطوير القطاع الزراعي عبر زيادة المعدلات الإنتاجية واستدامتها تتخذ الأقمار الصناعية وطائرات الدروز والكشف الميداني أدوات تعمل بها القطاع الزراعي وتعطي عدة قيم مضافة في إدارة المزرعة وتحسين جودة الإنتاج الكمية والنوعية ومن أهم خدماتها
+-	إدارة الشاملة الزراعية
+-	فحص التربة
+-	فحص تروية الأرض
+-	فحص جودة الأثمار
+-	منظومة التسويق الزراعي
+
+منتجات الشركة
+-	تواصل المزارع
+-	تواصل القهوة
+-	تواصل الكاكاو
+-	موجه الماشية
+-	ديميترا للغابات
+',
+'SAMMI GLORY LTD. (South Korean)' => 'شركة SAMMI GLORY LTD. (كورية الجنوبية)' ,
+    'simi_desc' =>'تعمل في صناعة معدات الرش البيئي والزراعي وحلول مقدمة في آليات مكافحة الآفات تتبع تقنيات حديثة توفر في استخدامات المبيدات وتقنية الرش الرذاذي التي تعطي مفعول سريع في المكافحة
+صورة
+',
+    'Grow' =>'والتي تعمل في مجال صناعة الإضاءات المتخصصة بتحفيز النمو للنباتات والتي تسرع في نمو الجانب الخضري وبجودة عالية جداً في البيوت المحمية والمشاتل' ,
+    'Grow 4 Max Company (China)' =>'شركة Grow 4 Max (الصين)' ,
+    'Latest Projects List' => 'أبرز المشاريع'
 
 
 

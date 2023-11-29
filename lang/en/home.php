@@ -72,7 +72,22 @@ return [
     'The modern qualitative shift in the world of modifications in the world of agriculture' => 'The modern qualitative shift in the world of modifications in the world of agriculture',
     'Modern technologies and business development in the world of agriculture are at your fingertips Be with us' =>'Modern technologies and business development in the world of agriculture are at your fingertips Be with us' ,
     'Agricultural and environmental studies and surveys' => 'Agricultural and environmental studies and surveys' ,
-    'SUT conducts a field survey of environmental and agricultural diseases and develops plans to combat them through a field work team and with the participation of our partners from the contracted companies' =>'SUT conducts a field survey of environmental and agricultural diseases and develops plans to combat them through a field work team and with the participation of our partners from the contracted companies'
+    'SUT conducts a field survey of environmental and agricultural diseases and develops plans to combat them through a field work team and with the participation of our partners from the contracted companies' =>'SUT conducts a field survey of environmental and agricultural diseases and develops plans to combat them through a field work team and with the participation of our partners from the contracted companies' ,
+    'dim_desc' => 'Increase Yield, Reduce Cost, Mitigate risk and financial inclusion
+                                            Which works to provide modern agricultural management techniques and solutions to develop the agricultural sector by increasing production rates and its sustainability. It uses satellites, drones, and field detection as tools with which the agricultural sector works and gives several added values in farm management and improves the quantitative and qualitative quality of production its most important services
+                                            - Comprehensive agricultural management
+                                            - Soil testing
+                                            - Checking the soil level
+                                            - Quality of fruit inspection
+                                            - Continuing agricultural marketing.
+
+                                            Our Product :
+                                            Connected Farmer
+                                            Connected Coffee
+                                            Connected Cacao
+                                            Livestock guru' ,
+    'Grow'=> 'SAMMI GLORY LTD. (South Korean)' ,
+    'Latest Projects List' =>'Latest Projects List' ,
 
 
 

@@ -117,3 +117,7 @@ display: none;
 {
     margin-right:10px;
 }
+.blog-details__content
+{
+    text-align: right;
+}

@@ -48,7 +48,7 @@
                     </div><!-- /.container -->
                 </div><!-- /.swiper-slide -->
                 <div class="swiper-slide">
-                    <div class="image-layer" style="background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), linear-gradient(to bottom, rgba(0, 0, 0, 0.5), url({{asset('assets/images/SLIDER/SLIDER-3.png')}});">
+                    <div class="image-layer" style="background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), linear-gradient(to bottom, rgba(0, 0, 0, 0.5), url("{{asset('assets/images/SLIDER/SLIDER-3.png')}}")>
                     </div>
                     <!-- /.image-layer -->
                     <div class="container">
@@ -203,7 +203,9 @@
     <section class="dimetra_kanda">
         <div class="container">
                 <div class="blog-card__content">
-                    <h3 class="text-center"><a href="blog-details.html">Sustainable Union Company has contracted with several international companies as their representative and commercial agent in the Kingdom of Saudi Arabia</a></h3>
+                    <h3 class="text-center"><a href="blog-details.html">
+                            {{__('home.Sustainable Union Company has contracted with several international companies as their representative and commercial agent in the Kingdom of Saudi Arabia')}}
+                        </a></h3>
                 </div><!-- /.blog-card__content -->
 
             <div class="row">
@@ -211,21 +213,8 @@
                             <div class="card">
                                 <div class="card-body">
                                     <div class="blog-details__content">
-                                        <h3>Dimitra Tech. ( Canada ) </h3>
-                                        <p>Increase Yield, Reduce Cost, Mitigate risk and financial inclusion
-                                            Which works to provide modern agricultural management techniques and solutions to develop the agricultural sector by increasing production rates and its sustainability. It uses satellites, drones, and field detection as tools with which the agricultural sector works and gives several added values in farm management and improves the quantitative and qualitative quality of production its most important services
-                                            - Comprehensive agricultural management
-                                            - Soil testing
-                                            - Checking the soil level
-                                            - Quality of fruit inspection
-                                            - Continuing agricultural marketing.
-
-                                            Our Product :
-                                            Connected Farmer
-                                            Connected Coffee
-                                            Connected Cacao
-                                            Livestock guru
-                                        </p>
+                                        <h3 style="font-size: 21px;font-weight: bold;margin-bottom: 27px;color: #74ca26;"> {{__('home.Dimitra Tech. ( Canada )')}} </h3>
+                                        <p>{{__('home.dim_desc')}}</p>
                                     </div><!-- /.blog-details__content -->
                                 </div>
                             </div>
@@ -235,14 +224,9 @@
                         <div class="card mb-5">
                             <div class="card-body">
                                 <div class="blog-details__content">
-                                    <h3> SAMMI GLORY LTD. (South Korean) </h3>
+                                    <h3 style="font-size: 21px;font-weight: bold;margin-bottom: 27px;color: #74ca26;"> {{__('home.SAMMI GLORY LTD. (South Korean)')}}</h3>
                                     <p>
-                                        It works in the manufacture of environmental
-                                        and agricultural spraying equipment and solutions
-                                        that provide pest control mechanisms.
-                                        It follows modern techniques
-                                        that save on the use of pesticides and spray technology that gives a quick effect
-                                        in control
+                                        {{__('home.simi_desc')}}
                                     </p>
                                 </div><!-- /.blog-details__content -->
                             </div>
@@ -250,11 +234,9 @@
                         <div class="card">
                             <div class="card-body">
                                 <div class="blog-details__content">
-                                    <h3> Grow 4 Max Company (China) </h3>
+                                    <h3 style="font-size: 21px;font-weight: bold;margin-bottom: 27px;color: #74ca26;"> {{__('home.Grow 4 Max Company (China)')}} </h3>
                                     <p>
-                                        Which works in the field of manufacturing specialized lighting that stimulates the growth of plants,
-                                        which accelerates the growth of the vegetative side with very high
-                                        quality in greenhouses and nurseries
+                                        {{__('home.Grow')}}
                                     </p>
                                 </div><!-- /.blog-details__content -->
                             </div>
@@ -264,12 +246,11 @@
             </div>
         </div>
     </section>
-    <div class="projects-one project-one__home-one">
+    <div class="projects-one project-one__home-one mt-5">
         <div class="container">
             <div class="block-title text-center">
                 <div class="block-title__image"></div><!-- /.block-title__image -->
-                <p>Closed projects</p>
-                <h3>Latest Projects List</h3>
+                <h3>{{__('home.Latest Projects List')}}</h3>
             </div><!-- /.block-title -->
             <div class="thm-swiper__slider swiper-container swiper-container-initialized swiper-container-horizontal" data-swiper-options="{&quot;spaceBetween&quot;: 0, &quot;slidesPerView&quot;: 1, &quot;loop&quot;: true, &quot;slidesPerGroup&quot;: 1, &quot;pagination&quot;: {
             &quot;el&quot;: &quot;#projects-one__swiper-pagination&quot;,
